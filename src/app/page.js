@@ -10,8 +10,8 @@ import Footer from "./Components/Footer";
 const page = () => {
   const [mode, setMode] = useState("light");
 
+  const newMode = mode === "light" ? "dark" : "light";
   const toggle = () => {
-    const newMode = mode === "light" ? "dark" : "light";
     setMode(newMode);
     document.body.style.backgroundColor =
       newMode === "dark" ? "black" : "white";
