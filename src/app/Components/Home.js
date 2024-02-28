@@ -13,6 +13,7 @@ const Home = ({ title }) => {
                   src="https://www.youtube.com/img/trending/avatar/trending.png"
                   width={32}
                   height={32}
+                  alt="img"
                 />
                 <h2>{title}</h2>
                 <Link href="/">

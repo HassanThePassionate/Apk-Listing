@@ -1,19 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import style from "../style/Navbar.module.css";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 const Navbar = ({ mode, toggle, open }) => {
   const [showmenu, setShowMenu] = useState(true);
   const [input, setInput] = useState("");
-  const clear = document.querySelector(".clears");
+  const clear = useRef(null);
   const handleChange = (e) => {
     setInput(e.target.value);
-    clear.style.transform = "scale(1)";
+    clear.current.style.transform = "scale(1)";
   };
   const handleClear = () => {
     setInput("");
-    clear.style.transform = "scale(0)";
+    clear.current.style.transform = "scale(0)";
   };
   const menuhandel = () => {
     setShowMenu(false);
@@ -58,6 +58,7 @@ const Navbar = ({ mode, toggle, open }) => {
                       height="329pt"
                       viewBox="0 0 329.269 329"
                       className="clears"
+                      ref={clear}
                     >
                       <path d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"></path>
                     </svg>
@@ -122,9 +123,9 @@ const Navbar = ({ mode, toggle, open }) => {
                       <path
                         d="M12 20v2m0-20v2m8 8h2M2 12h2m14 6 1.5 1.5m-15-15L6 6m12 0 1.5-1.5m-15 15L6 18m11-6a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
                         stroke="stroke-current"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></path>
                     </svg>
                   ) : (
@@ -132,9 +133,9 @@ const Navbar = ({ mode, toggle, open }) => {
                       <path
                         d="M3 11.449C3 16.724 7.169 21 12.312 21c3.959 0 7.34-2.534 8.688-6.107a8.074 8.074 0 0 1-3.515.8c-4.571 0-8.277-3.8-8.277-8.489 0-1.961.648-3.767 1.737-5.204C6.45 2.678 3 6.65 3 11.449Z"
                         stroke="stroke-current"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></path>
                     </svg>
                   )}
