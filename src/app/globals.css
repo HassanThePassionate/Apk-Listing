@@ -29,7 +29,10 @@ i svg {
   width: 100%;
 }
 .wrapper {
-  padding-top: 120px;
+  padding-top: 150px;
+}
+.wrapper2 {
+  padding-top: 64px;
 }
 .main {
   max-width: 840px;
@@ -85,8 +88,8 @@ i svg {
   letter-spacing: 0.2px;
 }
 .box-image img {
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
 }
 
 .texts {
@@ -123,15 +126,16 @@ i svg {
 .veiw {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   color: black;
   font-size: 1rem;
-  font-weight: 500;
-  background-color: #ffffff;
-  padding: 4px 6px;
-  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 12px;
+  border-radius: 30px;
   margin-left: 15px;
 }
+
 .veiw span {
   text-decoration: none;
 }
@@ -157,7 +161,6 @@ i svg {
 }
 
 .side-bar {
-  min-width: 240px;
   background-color: rgb(255, 255, 255);
   position: fixed;
   right: 30%;
@@ -186,8 +189,9 @@ i svg {
 .main-slider {
   background-color: #ffffff;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
 }
 .slider-iteam {
   display: flex;
@@ -384,6 +388,8 @@ i svg {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 1px solid rgb(74, 74, 74);
+  border-bottom: 1px solid rgb(74, 74, 74);
 }

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-const Home = ({ title }) => {
+const Home = ({ title, classTitle }) => {
   return (
     <>
       <section className="m-top">
         <div className="container">
-          <div className="wrapper">
+          <div className={classTitle}>
             <main className="main">
               <div className="p-title">
                 <Image
@@ -25,8 +25,8 @@ const Home = ({ title }) => {
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 320 512"
                           id="IconChangeColor"
-                          height="12"
-                          width="12"
+                          height="1"
+                          width="1"
                         >
                           <path
                             d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
@@ -444,10 +444,10 @@ const Home = ({ title }) => {
                   <div className="box">
                     <div className="box-image">
                       <Image
-                        src="https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q=s64-rw"
+                        src="https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q=s256-rw"
                         alt="app"
-                        width={64}
-                        height={64}
+                        width={55}
+                        height={55}
                       />
                     </div>
                     <div className="box-text">

@@ -25,8 +25,8 @@ const Page = () => {
   return (
     <>
       <Navbar mode={mode} toggle={toggle} open={handler} />
-      <Home title="Popular apps" />
-      <Home title="Popular Games" />
+      <Home title="Popular apps" classTitle="wrapper" />
+      <Home title="Popular Games" classTitle="wrapper2" />
       <Slider />
       <Footer />
       <MobileSearch open={handler} clear={clear} mode={mode} />
