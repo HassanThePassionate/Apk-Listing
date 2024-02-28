@@ -353,6 +353,16 @@ i svg {
   align-items: center;
   gap: 0.5rem;
 }
+.logo-footer {
+  min-height: 40px;
+}
+.logo-footer h4 {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin: 16px 0;
+}
 .last-svg {
   fill: #5799ef;
   width: 40px;

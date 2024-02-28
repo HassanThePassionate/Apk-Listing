@@ -322,10 +322,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          {/* <div className="logo-footer">
-            <Image src={brand} height={100} width={100} />
-          </div> */}
-          <p className="copyright">© 1990-2024 by IMDb.com, Inc.</p>\
+          <div className="logo-footer">
+            <h4>an amazon company</h4>
+          </div>
+          <p className="copyright">© 1990-2024 by IMDb.com, Inc.</p>
           <div className="brands">
             <ul className="brands-logo">
               <li className="brand">
