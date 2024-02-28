@@ -157,22 +157,22 @@ i svg {
   cursor: pointer;
 }
 .wrapper-box {
-  background-color: #ffffff;
-  display: flex;
-  border-radius: 5px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #fff;
   --bs-gutter-x: 1.5rem;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  padding: 1rem;
 }
-.boxes {
+/* .boxes {
   flex: 0 0 auto;
   width: 33.33333333%;
   max-width: 100%;
   margin-top: var(--bs-gutter-y);
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
-}
+} */
 .fix {
   display: flex;
   gap: 5rem;
