@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import style from "../style/Navbar.module.css";
 import Link from "next/link";
