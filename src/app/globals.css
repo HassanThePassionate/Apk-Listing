@@ -35,7 +35,7 @@ i svg {
   padding-top: 64px;
 }
 .main {
-  max-width: 840px;
+  max-width: 750px;
 }
 
 .box {
@@ -150,25 +150,27 @@ i svg {
 }
 .wrapper-box {
   background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
-  /* gap: 2rem; */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 1rem;
   border-radius: 5px;
   margin-top: 20px;
   white-space: wrap;
-  /* width: 100%; */
+  width: 100%;
 }
 
-.side-bar {
-  background-color: rgb(255, 255, 255);
+.fix {
+  display: flex;
+  gap: 5rem;
+}
+.fixed {
+  background-color: #ffffff;
+  width: 200px;
+}
+.sider-bar {
   position: fixed;
-  right: 30%;
-  top: 23%;
-  height: 58.5%;
-  display: none;
 }
-
 .slider {
   margin-top: 64px;
 }
