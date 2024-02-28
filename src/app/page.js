@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import MobileNav from "./Components/MobileNav";
@@ -7,9 +8,8 @@ import MobileSearch from "./Components/MobileSearch";
 import Home from "./Components/Home";
 import Slider from "./Components/Slider";
 import Footer from "./Components/Footer";
-const page = () => {
+const Page = () => {
   const [mode, setMode] = useState("light");
-  const [clear, setClear] = useState(false);
 
   const toggle = () => {
     const newMode = mode === "light" ? "dark" : "light";
@@ -17,7 +17,7 @@ const page = () => {
     document.body.style.backgroundColor =
       newMode === "dark" ? "black" : "white";
   };
-
+  const [clear, setClear] = useState(false);
   const handler = () => {
     setClear(!clear);
   };
@@ -35,4 +35,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
