@@ -11,7 +11,7 @@ const Home = ({ title, classTitle }) => {
               <main className="main">
                 <div className="p-title">
                   <Image
-                    src="https://www.youtube.com/img/trending/avatar/trending.png"
+                    src="https://static.extfans.com/onesite-client/images/app_hot.png?v=2.4.50"
                     width={32}
                     height={32}
                     alt="img"
