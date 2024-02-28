@@ -10,7 +10,7 @@ import logo5 from "/public/sixth.svg";
 import logo6 from "/public/seven.svg";
 import logo7 from "/public/eight.svg";
 import logo8 from "/public/nine.svg";
-import brand from "/public/imdb.svg";
+// import brand from "/public/imdb.svg";
 const Footer = () => {
   return (
     <>
@@ -322,9 +322,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="logo-footer">
+          {/* <div className="logo-footer">
             <Image src={brand} height={100} width={100} />
-          </div>
+          </div> */}
           <p className="copyright">© 1990-2024 by IMDb.com, Inc.</p>\
           <div className="brands">
             <ul className="brands-logo">
