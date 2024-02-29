@@ -47,7 +47,7 @@ i svg {
   cursor: pointer;
 }
 .box:hover {
-  background-color: #dee4e7;
+  background-color: #f3f6f9;
 }
 .box img {
   border-radius: 12px;
@@ -208,7 +208,7 @@ i svg {
   height: 190px;
 }
 .slider-iteam:hover {
-  background-color: #dee4e7;
+  background-color: #f3f6f9;
 }
 
 .slider-iteam img {
