@@ -241,6 +241,191 @@ const Cards = () => {
                               </button>
                             </div>
                           </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">6</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">7</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">8</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">9</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">10</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -457,6 +642,191 @@ const Cards = () => {
                               </button>
                             </div>
                           </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">6</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">7</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">8</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">9</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">10</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -640,6 +1010,191 @@ const Cards = () => {
                             <div className="card-iteam-content">
                               <div className="card-id">
                                 <span className="digit">5</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">6</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">7</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">8</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">9</span>
+                              </div>
+                              <div className="card-image">
+                                <div className="img-wrapper">
+                                  <div className="svg-wrapper">
+                                    <Image
+                                      src="https://puui.qpic.cn/iwan_cloud/1/4b8430733624f1f923cb72003ea1d1e1"
+                                      height={64}
+                                      width={64}
+                                      className="game-icon"
+                                    />
+                                    <Image
+                                      src={flash}
+                                      height={24}
+                                      width={24}
+                                      className="flash-icon"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-des">
+                                <div className="card-title">
+                                  Battlefield Without Borders
+                                </div>
+                                <div className="card-sub-title">
+                                  A war strategy mobile game with a high sense
+                                  of substitution and freedom
+                                </div>
+                              </div>
+                              <button className="card-btn">
+                                <span className="card-btn-text">Play</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="card-list-iteam">
+                            <div className="card-iteam-content">
+                              <div className="card-id">
+                                <span className="digit">10</span>
                               </div>
                               <div className="card-image">
                                 <div className="img-wrapper">
