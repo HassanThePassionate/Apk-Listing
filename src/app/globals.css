@@ -296,12 +296,11 @@ button:hover {
 .cards-wrapper {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
   margin-right: -24px;
   margin-bottom: -12px;
 }
 .card {
-  width: calc((100vw - 210px - 30px - 30px + 24px - 72px) / 3 * 1 + 0px);
+  width: 33.3333333333%;
   margin-right: 24px;
   margin-bottom: 12px;
 }
@@ -476,9 +475,6 @@ button:hover {
 }
 .card-btn:hover {
   background: rgba(255, 220, 20, 0.2);
-}
-.card-section .container {
-  max-width: 1800px;
 }
 .footer {
   margin-top: 10px;
