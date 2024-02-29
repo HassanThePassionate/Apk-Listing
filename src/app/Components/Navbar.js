@@ -7,7 +7,7 @@ import MobileSearch from "./MobileSearch";
 const Navbar = ({ mode, toggle }) => {
   const [clears, setClear] = useState(false);
   const open = () => {
-    setClear(!clears); // Changed clear to clears
+    setClear(!clears);
   };
   const [showmenu, setShowMenu] = useState(true);
   const [input, setInput] = useState("");

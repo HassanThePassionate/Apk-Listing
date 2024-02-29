@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 import style from "../style/Navbar.module.css";
-const MobileSearch = ({ open, mode }) => {
+const MobileSearch = ({ open }) => {
   return (
     <>
       <div className={style.fullH}>

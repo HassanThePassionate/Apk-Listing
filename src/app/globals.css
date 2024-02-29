@@ -142,8 +142,11 @@ i svg {
   padding: 5px 12px;
   border-radius: 30px;
   margin-left: 15px;
+  transition: all 0.2s;
 }
-
+.veiw:hover {
+  background-color: #d9dce0;
+}
 .veiw span {
   text-decoration: none;
 }
@@ -260,8 +263,11 @@ i svg {
   outline: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
-
+button:hover {
+  background-color: #d9dce0;
+}
 .footer {
   margin-top: 10px;
   padding-top: 16px;
@@ -436,7 +442,7 @@ i svg {
   .box h3 {
     font-size: 12px;
   }
-  .box p{
+  .box p {
     font-size: 10px;
   }
 }
