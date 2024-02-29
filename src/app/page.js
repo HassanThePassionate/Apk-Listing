@@ -1,10 +1,7 @@
 "use client";
 import React, { useState } from "react";
-
 import "./globals.css";
 import Navbar from "./Components/Navbar";
-import MobileNav from "./Components/MobileNav";
-import MobileSearch from "./Components/MobileSearch";
 import Home from "./Components/Home";
 import Slider from "./Components/Slider";
 import Footer from "./Components/Footer";
@@ -17,20 +14,14 @@ const Page = () => {
     document.body.style.backgroundColor =
       newMode === "dark" ? "black" : "white";
   };
-  const [clear, setClear] = useState(false);
-  const handler = () => {
-    setClear(!clear);
-  };
 
   return (
     <>
-      <Navbar mode={mode} toggle={toggle} open={handler} />
+      <Navbar mode={mode} toggle={toggle} />
       <Home title="Popular apps" classTitle="wrapper" />
       <Home title="Popular Games" classTitle="wrapper2" />
       <Slider />
       <Footer />
-      <MobileSearch open={handler} clear={clear} mode={mode} />
-      <MobileNav mode={mode} />
     </>
   );
 };

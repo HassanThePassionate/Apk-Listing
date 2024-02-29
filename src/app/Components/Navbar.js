@@ -1,27 +1,38 @@
-"use client";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import style from "../style/Navbar.module.css";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
-const Navbar = ({ mode, toggle, open }) => {
+import MobileSearch from "./MobileSearch";
+
+const Navbar = ({ mode, toggle }) => {
+  const [clears, setClear] = useState(false);
+  const open = () => {
+    setClear(!clears); // Changed clear to clears
+  };
   const [showmenu, setShowMenu] = useState(true);
   const [input, setInput] = useState("");
   const clear = useRef(null);
+
   const handleChange = (e) => {
     setInput(e.target.value);
     clear.current.style.transform = "scale(1)";
   };
+
   const handleClear = () => {
     setInput("");
     clear.current.style.transform = "scale(0)";
   };
-  const menuhandel = () => {
+
+  const menuhandle = () => {
     setShowMenu(false);
   };
 
   return (
     <>
-      {showmenu === true ? (
+      <MobileNav />
+      {clears === true ? (
+        <MobileSearch open={open} />
+      ) : showmenu === true ? (
         <header
           className={`${style.header} ${
             mode === "dark" ? style.headerDark : style.header
@@ -140,7 +151,7 @@ const Navbar = ({ mode, toggle, open }) => {
                     </svg>
                   )}
                 </button>
-                <button className={style.menuBtn} onClick={menuhandel}>
+                <button className={style.menuBtn} onClick={menuhandle}>
                   <i className="icon ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
