@@ -179,8 +179,8 @@ i svg {
 }
 .fixed {
   background-color: #ffffff;
-  width: 200px;
-  margin-top: 40px;
+  width: 20%;
+  /* margin-top: 40px; */
 }
 .sider-bar {
   position: fixed;

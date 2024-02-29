@@ -7,39 +7,39 @@ const Home = ({ title, classTitle }) => {
       <section className="m-top">
         <div className="container">
           <div className={classTitle}>
+            <div className="p-title">
+              <Image
+                src="https://static.extfans.com/onesite-client/images/app_hot.png?v=2.4.50"
+                width={32}
+                height={32}
+                alt="img"
+              />
+              <h2>{title}</h2>
+              <Link href="/">
+                <div className="veiw">
+                  <span>View More</span>
+                  <span className="view-icon">
+                    <i className="greater-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        id="IconChangeColor"
+                        height="10"
+                        width="10"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                          id="mainIconPathAttribute"
+                          fill="#000000"
+                        ></path>
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </Link>
+            </div>
             <div className="fix">
               <main className="main">
-                <div className="p-title">
-                  <Image
-                    src="https://static.extfans.com/onesite-client/images/app_hot.png?v=2.4.50"
-                    width={32}
-                    height={32}
-                    alt="img"
-                  />
-                  <h2>{title}</h2>
-                  <Link href="/">
-                    <div className="veiw">
-                      <span>View More</span>
-                      <span className="view-icon">
-                        <i className="greater-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512"
-                            id="IconChangeColor"
-                            height="10"
-                            width="10"
-                          >
-                            <path
-                              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                              id="mainIconPathAttribute"
-                              fill="#000000"
-                            ></path>
-                          </svg>
-                        </i>
-                      </span>
-                    </div>
-                  </Link>
-                </div>
                 <div className="wrapper-box">
                   <div className="boxes">
                     <div className="box">
