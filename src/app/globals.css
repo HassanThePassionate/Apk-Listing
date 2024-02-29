@@ -433,4 +433,10 @@ i svg {
   .fixed {
     display: none;
   }
+  .box h3 {
+    font-size: 12px;
+  }
+  .box p{
+    font-size: 10px;
+  }
 }
