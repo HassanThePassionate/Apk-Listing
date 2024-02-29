@@ -73,7 +73,7 @@ i svg {
   letter-spacing: 0;
 }
 .box p {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Roboto";
   line-height: 20px;
   font-weight: 400;
@@ -166,7 +166,8 @@ i svg {
   --bs-gutter-x: 1.5rem;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-  padding: 1rem;
+  padding: 3rem;
+  border-radius: 15px;
 }
 
 .fix {
@@ -267,6 +268,217 @@ i svg {
 }
 button:hover {
   background-color: #d9dce0;
+}
+
+.catagory {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.catagory-text {
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  border-radius: 21px;
+  cursor: pointer;
+  margin-bottom: 21px;
+  line-height: 18px;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cards-wrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -24px;
+  margin-bottom: -12px;
+}
+.card {
+  width: calc((100vw - 210px - 30px - 30px + 24px - 72px) / 3 * 1 + 0px);
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+.card-wrapper {
+  border: 1.5px solid transparent;
+  margin-right: 0;
+  height: 510px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  background-color: #212223;
+}
+.head-img {
+  display: inline-block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  vertical-align: middle;
+  border-style: none;
+}
+.card-img {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  vertical-align: middle;
+  border-style: none;
+  display: inline-block;
+  user-select: none;
+}
+.card-span {
+  color: #ffdc14;
+  position: absolute;
+  left: 16px;
+  top: 19px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.card-div {
+  background: linear-gradient(rgb(33, 34, 35) 0%, rgba(33, 34, 35, 0) 100%);
+  display: none;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  z-index: 10;
+}
+.card-list-wrapper {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 85px);
+  left: 0px;
+  top: 85px;
+  background: transparent;
+  padding-right: 4px;
+  z-index: 9;
+}
+.rank-list {
+  width: 100%;
+  height: 100%;
+  margin-right: -4px;
+  overflow-y: auto;
+}
+.card-list-iteam {
+  height: 64px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.card-iteam-content {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+.card-id {
+  width: 36px;
+  height: 30px;
+  margin-right: 9px;
+  display: flex;
+  color: gray;
+  font-size: 24px;
+  font-weight: 700;
+  /* font-family: tencentFont; */
+  opacity: 0.4;
+}
+.num {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.digit {
+  font-size: 20px;
+  margin-left: 0;
+}
+.img-wrapper {
+  width: 64px;
+  height: 64px;
+}
+.svg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.game-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  vertical-align: middle;
+  border-style: none;
+}
+.flash-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.card-des {
+  flex: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+}
+.card-title {
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-sub-title {
+  margin-top: 4px;
+  line-height: 16px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-btn {
+  width: 68px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(255, 220, 20, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.card-btn-text {
+  color: #ffdc14;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.card-btn:hover {
+  background: rgba(255, 220, 20, 0.2);
+}
+.card-section .container {
+  max-width: 1800px;
 }
 .footer {
   margin-top: 10px;

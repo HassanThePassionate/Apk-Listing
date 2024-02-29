@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "static.extfans.com",
       },
+      {
+        protocol: "https",
+        hostname: "puui.qpic.cn",
+      },
     ],
   },
 };

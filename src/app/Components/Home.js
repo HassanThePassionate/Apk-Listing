@@ -478,7 +478,7 @@ const Home = ({ title, classTitle }) => {
                     <div className="box">
                       <div className="box-image">
                         <Image
-                          src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo=s64-rw"
+                          src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo=s512-rw"
                           alt="app"
                           width={64}
                           height={64}

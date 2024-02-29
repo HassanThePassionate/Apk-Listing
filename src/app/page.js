@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Slider from "./Components/Slider";
 import Footer from "./Components/Footer";
+import Cards from "./Components/Cards";
 const Page = () => {
   const [mode, setMode] = useState("light");
 
@@ -21,6 +22,7 @@ const Page = () => {
       <Home title="Popular apps" classTitle="wrapper" />
       <Home title="Popular Games" classTitle="wrapper2" />
       <Slider />
+      <Cards />
       <Footer />
     </>
   );
