@@ -98,10 +98,10 @@ const Slider = () => {
           <div className="main-text">
             <div className="p-title">
               <Image
-                src="https://www.youtube.com/img/trending/avatar/trending.png"
+                src="https://static.extfans.com/onesite-client/images/app_hot.png?v=2.4.50"
                 width={32}
-                alt="img"
                 height={32}
+                alt="img"
               />
               <h2>Recommended</h2>
             </div>
