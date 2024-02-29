@@ -62,7 +62,7 @@ i svg {
   height: fit-content;
 }
 .box h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Roboto";
   line-height: 24px;
   white-space: nowrap;
@@ -89,8 +89,8 @@ i svg {
   letter-spacing: 0.2px;
 }
 .box-image img {
-  height: 55px;
-  width: 55px;
+  height: 64px;
+  width: 64px;
 }
 
 .texts {
