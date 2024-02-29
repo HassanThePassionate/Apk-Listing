@@ -190,7 +190,9 @@ i svg {
   display: flex;
   align-items: center;
 }
-
+.main {
+  width: 75%;
+}
 .main-text {
   display: flex;
   align-items: center;
