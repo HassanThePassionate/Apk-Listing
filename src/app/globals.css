@@ -17,6 +17,10 @@ body {
 a {
   text-decoration: none;
 }
+/* .swiper-slide {
+  width: 96.714px !important;
+  max-width: 100px !important;
+} */
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -197,7 +201,7 @@ i svg {
 }
 .main-slider {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 10px 0;
   margin-bottom: 30px;
   border-radius: 12px;
 }
@@ -206,35 +210,34 @@ i svg {
   flex-direction: column;
   align-items: flex-start;
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 10px 0;
   transition: all 0.3s;
   border-radius: 10px;
-  height: 190px;
-}
-.slider-iteam:hover {
-  background-color: #f3f6f9;
 }
 
 .slider-iteam img {
-  border-radius: 12px;
+  border-radius: 20%;
   border-width: 0;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  margin-bottom: 12px;
 }
 
 .slider-iteam h3 {
-  font-size: 12px;
-  font-family: "Roboto";
-  line-height: 16px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: 400;
   color: rgb(32, 33, 36);
-  letter-spacing: 0;
+  fill: rgb(32, 33, 36);
+  stop-color: rgb(32, 33, 36);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.0178571429em;
+  line-height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  margin-bottom: 5px;
+  white-space: pre-wrap;
 }
 .slider-iteam p {
-  font-size: 12px;
-  font-family: "Roboto";
   line-height: 20px;
   font-weight: 400;
   color: rgb(95, 99, 104);

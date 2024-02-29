@@ -146,8 +146,9 @@ const Slider = () => {
           <main className="main-slider">
             <div className="slider-wrapper">
               <Swiper
-                slidesPerView="7"
+                slidesPerView="auto"
                 spaceBetween={30}
+                centeredSlides={true}
                 loop={true}
                 onSwiper={(swiper) => setSwiperInstance(swiper)}
                 navigation={{
@@ -159,9 +160,12 @@ const Slider = () => {
               >
                 {data.map((e, index) => {
                   return (
-                    <SwiperSlide style={{ maxWidth: "180px" }} key={index}>
+                    <SwiperSlide
+                      style={{ maxWidth: "180px", width: "140px" }}
+                      key={index}
+                    >
                       <div className="slider-iteam">
-                        <Image src={e.img} alt="img" width={100} height={100} />
+                        <Image src={e.img} alt="img" width={141} height={141} />
                         <div className="slider-text">
                           <h3>{e.title}</h3>
                           <div className="texts">
