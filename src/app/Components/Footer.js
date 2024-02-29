@@ -330,47 +330,47 @@ const Footer = () => {
             <ul className="brands-logo">
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo} height={48} width={96} />
+                  <Image src={logo} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo1} height={48} width={96} />
+                  <Image src={logo1} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo2} height={48} width={96} />
+                  <Image src={logo2} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo3} height={48} width={96} />
+                  <Image src={logo3} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo4} height={48} width={96} />
+                  <Image src={logo4} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo5} height={48} width={96} />
+                  <Image src={logo5} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo6} height={48} width={96} />
+                  <Image src={logo6} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo7} height={48} width={96} />
+                  <Image src={logo7} height={48} width={96} alt="img" />
                 </Link>
               </li>
               <li className="brand">
                 <Link href="/">
-                  <Image src={logo8} height={48} width={96} />
+                  <Image src={logo8} height={48} width={96} alt="img" />
                 </Link>
               </li>
             </ul>
