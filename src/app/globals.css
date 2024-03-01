@@ -298,15 +298,17 @@ button:hover {
   position: relative;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .cards-wrapper {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   margin-right: -24px;
   margin-bottom: -12px;
+  flex-wrap: wrap;
 }
 .card {
-  width: 33.3333333333%;
+  /* width: 33.3333333333%; */
   margin-right: 24px;
   margin-bottom: 12px;
 }
@@ -403,6 +405,30 @@ button:hover {
   font-weight: 700;
   /* font-family: tencentFont; */
   opacity: 0.4;
+}
+.slider-btns {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.slider-btns #prev {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+}
+.slider-btns #next {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.pre-svg {
+  transform: rotate(180deg);
 }
 .num {
   font-size: 12px;
