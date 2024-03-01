@@ -236,12 +236,14 @@ i svg {
   display: -webkit-box;
   margin-bottom: 5px;
   white-space: pre-wrap;
+  font-family: Roboto;
 }
 .slider-iteam p {
   line-height: 20px;
   font-weight: 400;
   color: rgb(95, 99, 104);
   letter-spacing: 0.2px;
+  font-family: Roboto;
 }
 .slider-iteam .rating {
   color: rgb(95, 99, 104);
