@@ -9,13 +9,13 @@ import "swiper/css/navigation";
 
 const Cards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
-  const goNext = () => {
+  const goNexts = () => {
     if (swiperInstance) {
       swiperInstance.slideNext();
     }
   };
 
-  const goPrev = () => {
+  const goPrevs = () => {
     if (swiperInstance) {
       swiperInstance.slidePrev();
     }
@@ -91,8 +91,8 @@ const Cards = () => {
               loop={true}
               onSwiper={(swiper) => setSwiperInstance(swiper)}
               navigation={{
-                nextEl: "#next",
-                prevEl: "#prev",
+                nextEl: "#nexts",
+                prevEl: "#prevs",
               }}
               modules={[Navigation]}
               className="mySwiper"
@@ -528,7 +528,7 @@ const Cards = () => {
               </div>
             </Swiper>
             <div className="slider-btns">
-              <div id="prev" onClick={goPrev}>
+              <div id="prevs" onClick={goPrevs}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
@@ -544,7 +544,7 @@ const Cards = () => {
                   ></path>
                 </svg>
               </div>
-              <div id="next" onClick={goNext}>
+              <div id="nexts" onClick={goNexts}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"

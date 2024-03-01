@@ -411,7 +411,7 @@ button:hover {
   align-items: center;
   margin-left: 2rem;
 }
-.slider-btns #prev {
+.slider-btns #prevs {
   position: absolute;
   top: 50%;
   left: -10px;
@@ -419,7 +419,7 @@ button:hover {
   cursor: pointer;
   z-index: 10;
 }
-.slider-btns #next {
+.slider-btns #nexts {
   position: absolute;
   top: 50%;
   right: -20px;
