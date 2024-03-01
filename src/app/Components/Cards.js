@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import flash from "/public/light.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 
 const Cards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [slidesPerView, setSlidesPerView] = useState("auto");
+
   const goNexts = () => {
     if (swiperInstance) {
       swiperInstance.slideNext();
@@ -20,6 +22,23 @@ const Cards = () => {
       swiperInstance.slidePrev();
     }
   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const data = [
     {
       Himg: "https://puui.qpic.cn/iwan_cloud/1/250f7286ccbb83cb074a93f3c720f1de/q45",
@@ -72,23 +91,60 @@ const Cards = () => {
               <h2>Trending By Catagories</h2>
             </div>
           </div>
-          <div className="catagory">
-            <div className="catagory-text">
-              <p>Vinyl Banners</p>
+          <div className="catagory-btns">
+            <div className="catagory">
+              <div className="catagory-text">
+                <p>Vinyl Banners</p>
+              </div>
+              <div className="catagory-text">
+                <p>Posters</p>
+              </div>
+              <div className="catagory-text">
+                <p>Yard Signs</p>
+              </div>
             </div>
-            <div className="catagory-text">
-              <p>Posters</p>
-            </div>
-            <div className="catagory-text">
-              <p>Yard Signs</p>
+            <div className="buttonss">
+              <button onClick={goPrevs}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  id="IconChangeColor"
+                  height="12"
+                  width="12"
+                >
+                  <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    id="mainIconPathAttribute"
+                    strokeWidth="0.5"
+                    stroke="#ff0000"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </button>
+              <button onClick={goNexts}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  id="IconChangeColor"
+                  height="12"
+                  width="12"
+                >
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    id="mainIconPathAttribute"
+                    strokeWidth="0.5"
+                    stroke="#ff0000"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </button>
             </div>
           </div>
+
           <div className="cards">
             <Swiper
               slidesPerView={3}
               spaceBetween={30}
-              // centeredSlides={true}
-              loop={true}
               onSwiper={(swiper) => setSwiperInstance(swiper)}
               navigation={{
                 nextEl: "#nexts",
@@ -100,7 +156,10 @@ const Cards = () => {
               <div className="cards-wrapper">
                 {data.map((e, index) => {
                   return (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide
+                      style={{ maxWidth: "400px", width: "380px" }}
+                      key={index}
+                    >
                       <div className="card">
                         <div className="card-wrapper">
                           <div className="card-content">
@@ -527,39 +586,6 @@ const Cards = () => {
                 })}
               </div>
             </Swiper>
-            <div className="slider-btns">
-              <div id="prevs" onClick={goPrevs}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  id="IconChangeColor"
-                  height="30"
-                  width="30"
-                  className="pre-svg"
-                >
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                    id="mainIconPathAttribute"
-                    fill="#6b6b6b"
-                  ></path>
-                </svg>
-              </div>
-              <div id="nexts" onClick={goNexts}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  id="IconChangeColor"
-                  height="30"
-                  width="30"
-                >
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                    id="mainIconPathAttribute"
-                    fill="#6b6b6b"
-                  ></path>
-                </svg>
-              </div>
-            </div>
           </div>
         </div>
       </section>

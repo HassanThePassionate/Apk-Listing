@@ -8,17 +8,25 @@ import "swiper/css/navigation";
 
 const Slider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
   const goNext = () => {
     if (swiperInstance) {
       swiperInstance.slideNext();
+      setIsBeginning(false);
+      setIsEnd(swiperInstance.isEnd);
     }
   };
 
   const goPrev = () => {
     if (swiperInstance) {
       swiperInstance.slidePrev();
+      setIsEnd(false);
+      setIsBeginning(swiperInstance.isBeginning);
     }
   };
+
   const data = [
     {
       img: "https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=s256-rw",
@@ -107,7 +115,7 @@ const Slider = () => {
             </div>
 
             <div className="buttons">
-              <button onClick={goPrev}>
+              <button onClick={goPrev} disabled={isBeginning}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
@@ -124,7 +132,7 @@ const Slider = () => {
                   ></path>
                 </svg>
               </button>
-              <button onClick={goNext}>
+              <button onClick={goNext} disabled={isEnd}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
@@ -148,9 +156,13 @@ const Slider = () => {
               <Swiper
                 slidesPerView="auto"
                 spaceBetween={30}
-                centeredSlides={true}
-                loop={true}
-                onSwiper={(swiper) => setSwiperInstance(swiper)}
+                // centeredSlides={true}
+                // loop={true}
+                onSwiper={(swiper) => {
+                  setSwiperInstance(swiper);
+                  setIsBeginning(swiper.isBeginning);
+                  setIsEnd(swiper.isEnd);
+                }}
                 navigation={{
                   nextEl: "#next",
                   prevEl: "#prev",
