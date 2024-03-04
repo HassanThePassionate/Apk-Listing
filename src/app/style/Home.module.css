@@ -45,7 +45,10 @@
   display: flex;
   gap: 5rem;
 }
-.fixed {
+.sidebar {
   background-color: var(--secondary-color);
   width: 20%;
+  position: sticky;
+  top: 0;
+  height: 444px;
 }
