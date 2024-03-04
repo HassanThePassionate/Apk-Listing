@@ -8,7 +8,7 @@ const SocialCards = () => {
     <>
       {data.map((e, index) => {
         return (
-          <div className={style.cardListIteam}>
+          <div className={style.cardListIteam} key={index}>
             <div className={style.cardIteamContent} key={index}>
               <div className={style.cardId}>
                 {/* <span className="num">No</span> */}
