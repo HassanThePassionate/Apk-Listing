@@ -37,8 +37,8 @@ const Cards = () => {
                     <SwiperSlide
                       style={{
                         maxWidth: "550px",
-                        width: "420px",
-                        marginRight: "0px",
+                        width: "430px",
+                        marginRight: "1px",
                       }}
                       key={index}
                     >
