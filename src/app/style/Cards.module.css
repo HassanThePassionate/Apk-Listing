@@ -1,0 +1,92 @@
+.cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cardsWrapper {
+  /* flex: 1; */
+  display: flex;
+  margin-right: -24px;
+  margin-bottom: -12px;
+  flex-wrap: wrap;
+}
+.card {
+  /* width: 33.3333333333%; */
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+.cardWrapper {
+  /* border: 2px solid black; */
+  border: 1.5px solid transparent;
+  margin-right: 0;
+  height: 510px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+.headImg {
+  display: inline-block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  vertical-align: middle;
+  border-style: none;
+}
+.cardImg {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  vertical-align: middle;
+  border-style: none;
+  display: inline-block;
+  user-select: none;
+}
+.cardSpan {
+  color: var(--primary-color);
+  position: absolute;
+  left: 16px;
+  top: 19px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.cardDiv {
+  background: linear-gradient(rgb(33, 34, 35) 0%, rgba(33, 34, 35, 0) 100%);
+  display: none;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  z-index: 10;
+}
+.cardListWrapper {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 85px);
+  left: 0px;
+  top: 85px;
+  background: transparent;
+  padding-right: 4px;
+  z-index: 9;
+}
+.rankList {
+  width: 100%;
+  height: 100%;
+  margin-right: -4px;
+  overflow-y: auto;
+}

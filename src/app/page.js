@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Slider from "./Components/Slider";
 import Footer from "./Components/Footer";
 import Cards from "./Components/Cards";
+import SocialCards from "./Components/Cards/SocialCards";
 const Page = () => {
   const [mode, setMode] = useState("light");
 

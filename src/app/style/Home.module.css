@@ -1,0 +1,50 @@
+.veiw {
+  align-items: center;
+  background-color: var(--secondary-color);
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  color: var(--star-color);
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 700;
+  gap: 3px;
+  margin-left: 12px;
+  padding: 5px 12px 5px 16px;
+  transition: all 0.2s;
+  margin-top: 2px;
+}
+
+.veiw:hover {
+  background-color: var(--hover-color);
+}
+.veiw span {
+  text-decoration: none;
+}
+.greaterIcon {
+  display: flex;
+  align-items: center;
+  opacity: 100;
+  color: var(--star-color);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapperBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: var(--secondary-color);
+  --bs-gutter-x: 1.5rem;
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.fix {
+  display: flex;
+  gap: 5rem;
+}
+.fixed {
+  background-color: var(--secondary-color);
+  width: 20%;
+}
