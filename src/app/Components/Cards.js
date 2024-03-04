@@ -21,7 +21,7 @@ const Cards = () => {
           </div>
           <div className={style.cards}>
             <Swiper
-              slidesPerView={3}
+              slidesPerView="auto"
               spaceBetween={30}
               onSwiper={(swiper) => setSwiperInstance(swiper)}
               navigation={{
@@ -35,7 +35,11 @@ const Cards = () => {
                 {data.map((e, index) => {
                   return (
                     <SwiperSlide
-                      style={{ maxWidth: "400px", width: "380px" }}
+                      style={{
+                        maxWidth: "500px",
+                        width: "500px",
+                        marginRight: "20px",
+                      }}
                       key={index}
                     >
                       <div className={style.card}>

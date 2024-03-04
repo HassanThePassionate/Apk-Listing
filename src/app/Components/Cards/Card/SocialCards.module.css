@@ -45,12 +45,6 @@
   vertical-align: middle;
   border-style: none;
 }
-.flashIcon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-}
 .cardDes {
   flex: 1;
   padding-left: 12px;
