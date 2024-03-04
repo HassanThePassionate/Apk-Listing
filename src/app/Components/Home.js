@@ -2,6 +2,44 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 const Home = ({ title, classTitle }) => {
+  const data = [
+    {
+      img: "https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0=s64-rw",
+      title: "Temu: Shop Like a Billionaire",
+      catagory: "Shopping",
+      rating: 4.7,
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/BmUViDVOKNJe0GYJe22hsr7juFndRVbvr1fGmHGXqHfJjNAXjd26bfuGRQpVrpJ6YbA=s64-rw",
+      title: "Tiktok",
+      catagory: "Social",
+      rating: 4.7,
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s256-rw",
+      title: "WhatsApp Messenger",
+      catagory: "Communication",
+      rating: 4.7,
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0=s64-rw",
+      title: "Temu: Shop Like a Billionaire",
+      catagory: "Shopping",
+      rating: 4.7,
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/BmUViDVOKNJe0GYJe22hsr7juFndRVbvr1fGmHGXqHfJjNAXjd26bfuGRQpVrpJ6YbA=s64-rw",
+      title: "Tiktok",
+      catagory: "Social",
+      rating: 4.7,
+    },
+    {
+      img: "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s256-rw",
+      title: "WhatsApp Messenger",
+      catagory: "Communication",
+      rating: 4.7,
+    },
+  ];
   return (
     <>
       <section className="m-top">
@@ -48,204 +86,43 @@ const Home = ({ title, classTitle }) => {
               <main className="main">
                 <div className="wrapper-box">
                   <div className="boxes">
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>Temu: Shop Like a Billionaire</h3>
+                    {data.map((e, index) => {
+                      return (
+                        <div className="box" key={index}>
+                          <div className="box-image">
+                            <Image
+                              src={e.img}
+                              alt="app"
+                              width={64}
+                              height={64}
+                            />
+                          </div>
+                          <div className="box-text">
+                            <div className="texts">
+                              <h3>{e.title}</h3>
+                            </div>
+                            <div className="texts">
+                              <p>{e.catagory}</p>
+                            </div>
+                            <div className="texts">
+                              <span className="rating">4.0</span>
+                              <span className="star">
+                                <i className="star-icon">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                  </svg>
+                                </i>
+                              </span>
+                            </div>
+                          </div>
                         </div>
-                        <div className="texts">
-                          <p>Shopping</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.7</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/BmUViDVOKNJe0GYJe22hsr7juFndRVbvr1fGmHGXqHfJjNAXjd26bfuGRQpVrpJ6YbA=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>Tiktok</h3>
-                        </div>
-                        <div className="texts">
-                          <p>Social</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.3</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>WhatsApp Messenger</h3>
-                        </div>
-                        <div className="texts">
-                          <p>Communication</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.2</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>Temu: Shop Like a Billionaire</h3>
-                        </div>
-                        <div className="texts">
-                          <p>Shopping</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.7</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/BmUViDVOKNJe0GYJe22hsr7juFndRVbvr1fGmHGXqHfJjNAXjd26bfuGRQpVrpJ6YbA=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>Tiktok</h3>
-                        </div>
-                        <div className="texts">
-                          <p>Social</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.3</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box">
-                      <div className="box-image">
-                        <Image
-                          src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s64-rw"
-                          alt="app"
-                          width={64}
-                          height={64}
-                        />
-                      </div>
-                      <div className="box-text">
-                        <div className="texts">
-                          <h3>WhatsApp Messenger</h3>
-                        </div>
-                        <div className="texts">
-                          <p>Communication</p>
-                        </div>
-                        <div className="texts">
-                          <span className="rating">4.2</span>
-                          <span className="star">
-                            <i className="star-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="12"
-                                height="12"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-                              </svg>
-                            </i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
                   <div className="boxes">
                     <div className="box">

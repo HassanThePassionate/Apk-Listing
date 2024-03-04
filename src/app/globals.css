@@ -142,13 +142,13 @@ i svg {
   border-radius: 12px;
   color: #4b4b4b;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  gap: 4px;
-  line-height: 1;
+  gap: 3px;
   margin-left: 12px;
-  padding: 6px 12px 7px 16px;
+  padding: 5px 12px 5px 16px;
   transition: all 0.2s;
+  margin-top: 2px;
 }
 
 .veiw:hover {
@@ -204,7 +204,7 @@ i svg {
 }
 .main-slider {
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 5px;
   margin-bottom: 30px;
   border-radius: 12px;
 }
@@ -213,9 +213,14 @@ i svg {
   flex-direction: column;
   align-items: flex-start;
   cursor: pointer;
-  padding: 10px 0;
+  padding: 12px;
   transition: all 0.3s;
   border-radius: 10px;
+  height: 230px;
+  width: 164px;
+}
+.slider-iteam:hover {
+  background-color: #f3f6f9;
 }
 
 .slider-iteam img {
@@ -414,7 +419,6 @@ button:hover {
   color: gray;
   font-size: 24px;
   font-weight: 700;
-  /* font-family: tencentFont; */
   opacity: 0.4;
 }
 .num {
