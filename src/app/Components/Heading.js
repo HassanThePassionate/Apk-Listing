@@ -24,7 +24,7 @@ const Heading = ({ title }) => {
                 height="10"
                 width="10"
                 style={{
-                  marginTop: "3px",
+                  marginTop: "2px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",

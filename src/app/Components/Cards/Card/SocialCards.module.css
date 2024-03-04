@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 .cardIteamContent {
-  padding: 0 16px;
+  padding: 10px 16px;
   display: flex;
   align-items: center;
   transition: all 0.3s;
@@ -12,9 +12,12 @@
 .cardIteamContent:hover {
   background-color: var(--hover-color);
 }
-/* .cardIteamContent:hover {
+.sCatagory {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
 
-} */
 .cardId {
   width: 36px;
   height: 30px;

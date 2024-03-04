@@ -58,11 +58,11 @@ i svg {
 .p-title h2 {
   text-align: left;
   height: 32px;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #11143b;
   line-height: 32px;
-  font-family: Roboto;
+  text-transform: uppercase;
 }
 .texts {
   align-items: center;
@@ -100,10 +100,11 @@ i svg {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  width: 36px;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  height: 40px;
+  width: 40px;
 }
 button:hover {
   background-color: var(--hover-color);
@@ -121,16 +122,17 @@ button:hover {
   justify-content: space-between;
 }
 .catagory-text {
-  padding: 7px 15px;
-  font-size: 12px;
+  padding: 10px 19px;
+  font-size: 14px;
   font-weight: 600;
   background-color: var(--secondary-color);
   text-align: center;
   text-overflow: ellipsis;
   border-radius: 21px;
   cursor: pointer;
-  margin-bottom: 21px;
-  line-height: 18px;
+  margin-bottom: 24px;
+  line-height: 20px;
+  border: 1px solid #e6e6e6;
 }
 .catagory-text:hover {
   background-color: var(--hover-color);
@@ -150,10 +152,11 @@ button:hover {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  width: 36px;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  height: 40px;
+  width: 40px;
 }
 button:hover {
   background-color: var(--hover-color);

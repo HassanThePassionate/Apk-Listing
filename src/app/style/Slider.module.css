@@ -15,6 +15,9 @@
 .mainSlider {
   background-color: var(--secondary-color);
   padding: 5px 20px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border-radius: 12px;
+  padding: 20px 20px 20px;
+
+  margin-bottom: 0px !important;
 }
