@@ -18,13 +18,25 @@ const Tabs = ({ Instance }) => {
       <div className="catagory-btns">
         <div className="catagory">
           <div className="catagory-text">
-            <p>Vinyl Banners</p>
+            <p>Hot List</p>
           </div>
           <div className="catagory-text">
-            <p>Posters</p>
+            <p>New Arrivals</p>
           </div>
           <div className="catagory-text">
-            <p>Yard Signs</p>
+            <p>Featured List</p>
+          </div>
+          <div className="catagory-text">
+            <p>Legend List</p>
+          </div>
+          <div className="catagory-text">
+            <p>Card Leaderboard</p>
+          </div>
+          <div className="catagory-text">
+            <p>Strategy List</p>
+          </div>
+          <div className="catagory-text">
+            <p>Xiania List</p>
           </div>
         </div>
         <Sliderbtn Instance={Instance} />

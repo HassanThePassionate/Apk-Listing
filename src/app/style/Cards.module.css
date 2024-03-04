@@ -89,4 +89,18 @@
   height: 100%;
   margin-right: -4px;
   overflow-y: auto;
+  /* visibility: hidden; */
+}
+.rankList::-webkit-scrollbar {
+  width: 5px;
+}
+.rankList::-webkit-scrollbar-thumb {
+  background-color: hsl(240 5.9% 90%);
+  border-radius: 999px;
+  visibility: hidden;
+}
+.cardListWrapper:hover {
+  .rankList::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
 }

@@ -18,61 +18,60 @@ const Cards = () => {
         <div className="container">
           <div className={style.cardsTilte}>
             <Tabs Instance={swiperInstance} />
-
-            <div className={style.cards}>
-              <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
-                onSwiper={(swiper) => setSwiperInstance(swiper)}
-                navigation={{
-                  nextEl: "#nexts",
-                  prevEl: "#prevs",
-                }}
-                modules={[Navigation]}
-                className="mySwiper"
-              >
-                <div className={style.cardsWrapper}>
-                  {data.map((e, index) => {
-                    return (
-                      <SwiperSlide
-                        style={{ maxWidth: "400px", width: "380px" }}
-                        key={index}
-                      >
-                        <div className={style.card}>
-                          <div className={style.cardWrapper}>
-                            <div className={style.cardContent}>
-                              <Image
-                                className={style.headImg}
-                                src={e.Himg}
-                                width={840}
-                                height={240}
-                                alt="img"
-                              />
-                              <Image
-                                className={style.cardImg}
-                                src={e.Cimg}
-                                width={400}
-                                height={200}
-                                alt="img"
-                              />
-                              <span className={style.cardSpan}>{e.title}</span>
-                              <div className={style.cardDiv}></div>
-                              <div className={style.cardListWrapper}>
-                                <div className={style.rankList}>
-                                  <div style={{ paddingBottom: "10px" }}>
-                                    <SocialCards />
-                                  </div>
+          </div>
+          <div className={style.cards}>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              onSwiper={(swiper) => setSwiperInstance(swiper)}
+              navigation={{
+                nextEl: "#nexts",
+                prevEl: "#prevs",
+              }}
+              modules={[Navigation]}
+              className="mySwiper"
+            >
+              <div className={style.cardsWrapper}>
+                {data.map((e, index) => {
+                  return (
+                    <SwiperSlide
+                      style={{ maxWidth: "400px", width: "380px" }}
+                      key={index}
+                    >
+                      <div className={style.card}>
+                        <div className={style.cardWrapper}>
+                          <div className={style.cardContent}>
+                            <Image
+                              className={style.headImg}
+                              src={e.Himg}
+                              width={840}
+                              height={240}
+                              alt="img"
+                            />
+                            <Image
+                              className={style.cardImg}
+                              src={e.Cimg}
+                              width={400}
+                              height={200}
+                              alt="img"
+                            />
+                            <span className={style.cardSpan}>{e.title}</span>
+                            <div className={style.cardDiv}></div>
+                            <div className={style.cardListWrapper}>
+                              <div className={style.rankList}>
+                                <div style={{ paddingBottom: "10px" }}>
+                                  <SocialCards />
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </SwiperSlide>
-                    );
-                  })}
-                </div>
-              </Swiper>
-            </div>
+                      </div>
+                    </SwiperSlide>
+                  );
+                })}
+              </div>
+            </Swiper>
           </div>
         </div>
       </section>
