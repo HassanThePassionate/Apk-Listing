@@ -3,7 +3,7 @@ import style from "../style/Home.module.css";
 const Sidebar = () => {
   return (
     <>
-      <aside className={style.sidebar}></aside>
+      <aside className={style.Sidebar}></aside>
     </>
   );
 };

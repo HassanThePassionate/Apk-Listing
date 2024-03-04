@@ -27,6 +27,7 @@ const Page = () => {
             <Home title="Popular apps" classTitle="wrapper" />
             <Home title="Popular Games" classTitle="wrapper2" />
           </main>
+
           <Sidebar />
         </div>
       </div>

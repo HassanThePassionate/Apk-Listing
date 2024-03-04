@@ -10,12 +10,11 @@ const Home = ({ title, classTitle }) => {
         <div className="container">
           <div className={classTitle}>
             <Heading title={title} />
-
-            <div className={style.wrapperBox}>
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-            </div>
+          </div>
+          <div className={style.wrapperBox}>
+            <SmallCard />
+            <SmallCard />
+            <SmallCard />
           </div>
         </div>
       </section>

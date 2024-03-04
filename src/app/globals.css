@@ -268,12 +268,13 @@ button:hover {
 } */
 .sticky-wrapper {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  /* align-items: center; */
+  /* gap: 1rem;  */
 }
 .main {
-  width: 80%;
+  flex: 1;
 }
+
 @media screen and (max-width: 1024px) {
   .main {
     width: 90%;

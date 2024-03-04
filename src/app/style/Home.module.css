@@ -40,15 +40,10 @@
   padding: 3rem;
   border-radius: 15px;
 }
-
-/* .fix {
-  display: flex;
-  gap: 5rem;
-} */
-.sidebar {
+.Sidebar {
   background-color: var(--secondary-color);
-  width: 20%;
+  width: 300px;
   position: sticky;
-  top: 0;
-  height: 444px;
+  top: 20%;
+  height: 440px;
 }
