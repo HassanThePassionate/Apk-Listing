@@ -109,7 +109,7 @@
 .listText {
   display: flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 50px;
   color: var(--primary-color);
   cursor: pointer;
   font-size: 15px;
@@ -121,6 +121,7 @@
   white-space: nowrap;
   z-index: 11;
   text-decoration: none;
+  transition: all 0.3s;
 }
 .listText:hover {
   background-color: var(--hover-color);
