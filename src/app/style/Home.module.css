@@ -41,10 +41,10 @@
   border-radius: 15px;
 }
 
-.fix {
+/* .fix {
   display: flex;
   gap: 5rem;
-}
+} */
 .sidebar {
   background-color: var(--secondary-color);
   width: 20%;
