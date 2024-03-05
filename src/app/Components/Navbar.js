@@ -10,6 +10,7 @@ import Navbtns from "./Navbtns";
 const Navbar = () => {
   const [clears, setClear] = useState(false);
   const [showmenu, setShowMenu] = useState(true);
+
   const open = () => {
     setClear(!clears);
   };
