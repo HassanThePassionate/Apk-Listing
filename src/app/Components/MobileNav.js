@@ -12,11 +12,11 @@ const MobileNav = (props) => {
     props.setShowMenu(true);
   };
 
-  if (props.showmenu === false) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+  // if (props.showmenu === false) {
+  //   document.body.style.overflow = "hidden";
+  // } else {
+  //   document.body.style.overflow = "auto";
+  // }
   return (
     <>
       {props.showmenu === false ? (
