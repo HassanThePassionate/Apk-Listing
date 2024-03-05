@@ -5,6 +5,7 @@
   width: 100%;
   top: 0;
   z-index: 1100000;
+  border-bottom: 2px solid var(--boder-color);
 }
 .navbar {
   display: flex;
@@ -65,11 +66,12 @@
   border: 1px solid var(--boder-color);
   border-radius: 59px;
   font-size: 15px;
-  line-height: 40px;
-  min-height: 40px;
+  line-height: 45px;
+  min-height: 45px;
   padding: 0 42px;
   transition: all 0.25s ease-in-out;
   outline: none;
+  color: var(--primary-color);
 }
 .clear i {
   display: flex;
