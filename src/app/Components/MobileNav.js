@@ -11,14 +11,16 @@ const MobileNav = (props) => {
   const hidemenu = () => {
     props.setShowMenu(true);
   };
+
+  if (props.showmenu === false) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
   return (
     <>
       {props.showmenu === false ? (
-        <header
-          className={`${styles.mobileHeader}  ${
-            props.mode === "dark" ? styles.headerDark : styles.mobileHeader
-          }}}`}
-        >
+        <header className={styles.mobileHeader}>
           <div className={styles.mobileFlexbox}>
             <div className={styles.mobileFlex}>
               <div className={styles.mobileLogo}></div>

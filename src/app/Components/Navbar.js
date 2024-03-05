@@ -13,6 +13,7 @@ const Navbar = () => {
     setClear(!clears);
   };
   const [showmenu, setShowMenu] = useState(true);
+
   const menuhandle = () => {
     setShowMenu(false);
   };

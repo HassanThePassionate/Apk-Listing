@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,6 +12,22 @@ import style from "../style/Cards.module.css";
 
 const Cards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024 && window.innerWidth >= 600) {
+        setSlidesPerView(2);
+      } else if (window.innerWidth <= 600) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <section className={style.cardSection}>
@@ -21,7 +37,7 @@ const Cards = () => {
           </div>
           <div className={style.cards}>
             <Swiper
-              slidesPerView={3}
+              slidesPerView={slidesPerView}
               spaceBetween={30}
               onSwiper={(swiper) => setSwiperInstance(swiper)}
               navigation={{
