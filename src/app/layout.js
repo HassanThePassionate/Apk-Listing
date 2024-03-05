@@ -1,10 +1,4 @@
-import { Titillium_Web } from "next/font/google";
 import "./globals.css";
-
-const titillium_Web = Titillium_Web({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "600", "700", "900"],
-});
 
 export const metadata = {
   title: "Apk Listing ",
@@ -14,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={titillium_Web.className}>
+      <body className="light-theme">
         {children}
         <script
           src="https://kit.fontawesome.com/191f0bfef4.js"

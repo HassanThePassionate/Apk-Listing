@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "../style/Navbar.module.css";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
@@ -9,15 +9,14 @@ import Navbtns from "./Navbtns";
 
 const Navbar = () => {
   const [clears, setClear] = useState(false);
+  const [showmenu, setShowMenu] = useState(true);
   const open = () => {
     setClear(!clears);
   };
-  const [showmenu, setShowMenu] = useState(true);
 
   const menuhandle = () => {
     setShowMenu(false);
   };
-
   return (
     <>
       <MobileNav />

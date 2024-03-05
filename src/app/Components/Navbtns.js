@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "../style/Navbar.module.css";
-const Navbtns = ({ toggle, menuhandle, mode, open }) => {
+const Navbtns = ({ menuhandle, open }) => {
+  const [theme, setTheme] = useState("light-theme");
+  const toggletheme = () => {
+    if (theme === "dark-theme") {
+      setTheme("light-theme");
+    } else {
+      setTheme("dark-theme");
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <>
       <div className={style.btns}>
@@ -12,8 +23,8 @@ const Navbtns = ({ toggle, menuhandle, mode, open }) => {
           </i>
         </button>
 
-        <button className={style.modeIcon} onClick={toggle}>
-          {mode === "dark" ? (
+        <button className={style.modeIcon} onClick={toggletheme}>
+          {theme === "dark-theme" ? (
             <svg fill="none" viewBox="0 0 24 24">
               <path
                 d="M12 20v2m0-20v2m8 8h2M2 12h2m14 6 1.5 1.5m-15-15L6 6m12 0 1.5-1.5m-15 15L6 18m11-6a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"

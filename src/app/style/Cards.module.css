@@ -35,7 +35,7 @@
   border-radius: 8px;
   width: 100%;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--box-color);
 }
 .headImg {
   display: inline-block;
@@ -95,7 +95,7 @@
   width: 5px;
 }
 .rankList::-webkit-scrollbar-thumb {
-  background-color: hsl(240 5.9% 90%);
+  background-color: var(--scroll-color);
   border-radius: 999px;
   visibility: hidden;
 }

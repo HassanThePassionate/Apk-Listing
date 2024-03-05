@@ -10,6 +10,7 @@ const MobileSearch = ({ open }) => {
               type="text"
               name="text"
               id="text"
+              placeholder="Search"
               className={style.searchbarIn}
             />
           </form>

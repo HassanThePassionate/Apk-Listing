@@ -7,7 +7,7 @@
   align-items: flex-start;
   padding: 1rem !important;
   gap: 1rem;
-  background: var(--secondary-color);
+
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s;
