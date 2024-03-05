@@ -42,8 +42,10 @@
 }
 .Sidebar {
   background-color: var(--secondary-color);
-  width: 300px;
+  width: 20%;
   position: sticky;
-  top: 20%;
-  height: 440px;
+  top: 0;
+  height: 441.75px;
+  margin-top: 200px;
+  border-radius: 12px;
 }
