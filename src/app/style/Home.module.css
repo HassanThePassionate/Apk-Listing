@@ -31,14 +31,12 @@
   cursor: pointer;
 }
 .wrapperBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
+  padding: 3rem;
+  border-radius: 15px;
   --bs-gutter-x: 1.5rem;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-  padding: 3rem;
-  border-radius: 15px;
 }
 .Sidebar {
   background-color: var(--secondary-color);
@@ -48,4 +46,14 @@
   height: 441.75px;
   margin-top: 200px;
   border-radius: 12px;
+}
+@media screen and (max-width: 768px) {
+  .Sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .veiw {
+    display: none;
+  }
 }

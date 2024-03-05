@@ -13,8 +13,6 @@ const Home = ({ title, classTitle }) => {
           </div>
           <div className={style.wrapperBox}>
             <SmallCard />
-            <SmallCard />
-            <SmallCard />
           </div>
         </div>
       </section>

@@ -115,6 +115,7 @@ button:hover {
   align-items: center;
   gap: 1rem;
   padding-top: 8px;
+  flex-wrap: wrap;
 }
 .catagory-btns {
   display: flex;
@@ -274,17 +275,26 @@ button:hover {
 .main {
   flex: 1;
 }
+@media screen and (max-width: 1280px) {
+  .box {
+    max-width: 50%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
-  .main {
-    width: 90%;
+  .catagory {
+    gap: 0.3rem;
+    padding-top: 2px;
   }
 }
 @media screen and (max-width: 768px) {
-  .fixed {
-    display: none;
+  .catagory-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+    line-height: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .box {
     display: grid;
@@ -293,16 +303,25 @@ button:hover {
     grid-gap: 0.5rem;
     gap: 0.1rem;
   }
-  .main {
-    width: 90%;
-  }
-  .fixed {
-    display: none;
-  }
+
   .box h3 {
     font-size: 12px;
   }
   .box p {
     font-size: 10px;
+  }
+  .p-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .p-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .catagory {
+    display: none;
+  }
+  .buttonss {
+    margin-left: auto;
   }
 }

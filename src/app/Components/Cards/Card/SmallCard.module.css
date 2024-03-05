@@ -1,6 +1,10 @@
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
 .box {
-  display: grid;
-  grid-template-columns: max-content auto;
+  display: flex;
+  align-items: flex-start;
   padding: 1rem !important;
   gap: 1rem;
   background: var(--secondary-color);
@@ -9,6 +13,9 @@
   transition: all 0.3s;
   cursor: pointer;
   margin-top: 10px;
+  max-width: 33%;
+  width: 100%;
+  min-width: 258px;
 }
 .box:hover {
   background-color: var(--hover-color);

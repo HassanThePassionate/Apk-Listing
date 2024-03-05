@@ -1,5 +1,4 @@
 import React from "react";
-import flash from "/public/light.svg";
 import Image from "next/image";
 import { data } from "@constant/SocialCardData";
 import style from "./Card/SocialCards.module.css";

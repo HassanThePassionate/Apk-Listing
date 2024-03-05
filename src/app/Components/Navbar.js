@@ -7,7 +7,7 @@ import Searchbar from "./Searchbar";
 import NavCatagory from "./NavCatagory";
 import Navbtns from "./Navbtns";
 
-const Navbar = ({ mode, toggle }) => {
+const Navbar = () => {
   const [clears, setClear] = useState(false);
   const open = () => {
     setClear(!clears);
@@ -23,22 +23,13 @@ const Navbar = ({ mode, toggle }) => {
       {clears === true ? (
         <MobileSearch open={open} />
       ) : showmenu === true ? (
-        <header
-          className={`${style.header} ${
-            mode === "dark" ? style.headerDark : style.header
-          }`}
-        >
+        <header className={style.header}>
           <div className={style.container}>
             <nav className={style.navbar}>
               <Link href="/" className={style.logo}></Link>
               <Searchbar />
               <NavCatagory />
-              <Navbtns
-                toggle={toggle}
-                menuhandle={menuhandle}
-                mode={mode}
-                open={open}
-              />
+              <Navbtns menuhandle={menuhandle} open={open} />
             </nav>
           </div>
         </header>
