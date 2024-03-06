@@ -70,10 +70,12 @@ const page = () => {
                           </span>
                           <p>1.29M reviews</p>
                         </div>
+                        <div className={style.line}></div>
                         <div className={style.downloads}>
                           <span className={style.ratingtitle}>50M+</span>
                           <p>Downloads</p>
                         </div>
+                        <div className={style.line}></div>
                         <div className={style.rated}>
                           <Image
                             src="https://play-lh.googleusercontent.com/csiz76udPjXmaJddU_1sanHGlQAAbKkvlprK3DSUNmwu1nY3U6qnXRrI2IDMaivooYK1x11oxz3PEO4z=w48-h16-rw"

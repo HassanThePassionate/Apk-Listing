@@ -280,3 +280,7 @@
   margin-top: 135px;
   border-radius: 12px;
 }
+.line {
+  height: 24px;
+  border-left: 1px solid #3c4043;
+}
