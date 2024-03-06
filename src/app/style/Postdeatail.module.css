@@ -1,0 +1,282 @@
+.mainWrapper {
+  padding-top: 20px;
+}
+.tags {
+  padding-top: 100px;
+}
+.taglist {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.tagIteam {
+  list-style: none;
+}
+.tagIteam a {
+  font-size: 10px;
+  color: var(--prmary-color);
+  font-family: system-ui;
+}
+
+.postWrapper {
+  padding: 80px;
+  background-color: black;
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+.gameImage img {
+  border-radius: 18px;
+}
+.gameiteam {
+  display: flex;
+  gap: 1.8rem;
+}
+.gametext h2 {
+  font-size: 35px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: var(--secondary-color);
+  line-height: 30px;
+}
+.gametext h5 {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #00a173;
+  padding-top: 15px;
+}
+.gametext p {
+  font-size: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: rgb(154, 160, 166);
+}
+.postrating {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-top: 30px;
+}
+.gamerating {
+  padding-right: 16px;
+  text-align: center;
+}
+.gamerating svg {
+  fill: #fff;
+  padding-left: 3px;
+}
+
+.postrating .ratingtitle {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-align: center;
+}
+.postrating p {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  white-space: nowrap;
+  color: rgb(154, 160, 166);
+}
+.downloads {
+  padding: 0 24px;
+  text-align: center;
+}
+.rated {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 40px;
+}
+.btns .install {
+  height: 48px;
+  min-width: 200px;
+  padding: 0 16px 0 16px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: #00a173;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.0107142857em;
+  font-weight: 500;
+  text-transform: none;
+
+  cursor: pointer;
+}
+.btns .install:hover {
+  background-color: #01875f;
+}
+.btns .sharebtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sharebtn svg {
+  fill: #00a173;
+}
+.text {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(154, 160, 166);
+  gap: 3rem;
+}
+.text p {
+  font-size: 12px;
+  font-family: Roboto;
+  color: rgb(154, 160, 166);
+}
+.text2 {
+  display: flex;
+  align-items: center;
+}
+.text2 a {
+  color: rgb(154, 160, 166);
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: Roboto;
+  padding-left: 2px;
+}
+.postDetail {
+  background-color: var(--secondary-color);
+  margin-top: 30px;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.aboutgame {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.aboutTile {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.aboutTile h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 600;
+}
+.gamedes {
+  font-size: 14px;
+  color: #333;
+  font-family: Roboto;
+  line-height: 25px;
+}
+.datawrapper {
+  border-color: rgb(218, 220, 224);
+  border-radius: 8px;
+  border: 1px solid;
+  margin-top: 30px;
+  padding: 20px 20px 20px;
+}
+.dataiteam {
+  align-items: flex-start;
+  display: flex;
+  padding-top: 20px;
+}
+
+.dataiteam img {
+  margin-right: 20px;
+}
+.datades {
+  color: rgb(95, 99, 104);
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+}
+.datatitle {
+  color: rgb(95, 99, 104);
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+}
+.datades a {
+  color: rgb(95, 99, 104);
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.dataiteam1 {
+  align-items: flex-start;
+  display: flex;
+}
+.dataiteam1 img {
+  margin-right: 20px;
+}
+
+.similargame {
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 12px;
+}
+.title2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.title2 h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 500;
+}
+.title1 {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.title1 h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 500;
+}
+.arrow {
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+.arrow:hover {
+  background-color: #f4f4f4;
+}
+.Sidebar {
+  background-color: var(--box-color);
+  width: 20%;
+  position: sticky;
+  top: 0;
+  height: 446px;
+  margin-top: 135px;
+  border-radius: 12px;
+}

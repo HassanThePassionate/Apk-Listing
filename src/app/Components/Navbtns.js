@@ -12,6 +12,7 @@ const Navbtns = ({ menuhandle, open }) => {
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+
   return (
     <>
       <div className={style.btns}>

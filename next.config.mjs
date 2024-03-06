@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "puui.qpic.cn",
       },
+      {
+        protocol: "https",
+        hostname: "clipground.com",
+      },
     ],
   },
 };

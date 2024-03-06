@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+"use client";
+import React, { useState } from "react";
 import style from "../style/Navbar.module.css";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
