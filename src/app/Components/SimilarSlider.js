@@ -23,6 +23,8 @@ const SimilarSlider = () => {
   return (
     <>
       <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
         navigation={{
