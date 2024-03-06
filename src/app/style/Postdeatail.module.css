@@ -168,7 +168,7 @@
   padding-top: 20px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .aboutTile h2 {
   font-size: 22px;
