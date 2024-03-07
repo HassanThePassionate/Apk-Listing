@@ -297,7 +297,7 @@
   border-radius: 50%;
 }
 .arrow:hover {
-  background-color: #f4f4f4;
+  background-color: var(--hover-color);
 }
 .Sidebar {
   background-color: var(--box-color);
