@@ -4,8 +4,6 @@ import Heading from "./Heading";
 import MiniCardbtn from "./MiniCardbtn";
 import MiniCard from "./Cards/Card/MiniCard";
 
-// import { data } from "@constant/data";
-
 const Slider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   return (

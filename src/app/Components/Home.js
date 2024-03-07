@@ -1,6 +1,6 @@
 import React from "react";
 import SmallCard from "./Cards/Card/SmallCard";
-// import Sidebar from "./Sidebar";
+
 import Heading from "./Heading";
 import style from "../style/Home.module.css";
 const Home = ({ title, classTitle }) => {
