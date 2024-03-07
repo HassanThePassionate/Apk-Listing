@@ -1,15 +1,12 @@
 "use client";
 import "./globals.css";
-import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Slider from "./Components/Slider";
-import Footer from "./Components/Footer";
 import Cards from "./Components/Cards";
 import Sidebar from "./Components/Sidebar";
 const Page = () => {
   return (
     <>
-      <Navbar />
       <div className="container">
         <div className="sticky-wrapper">
           <main className="main">
@@ -22,7 +19,6 @@ const Page = () => {
       </div>
       <Slider />
       <Cards />
-      <Footer />
     </>
   );
 };
