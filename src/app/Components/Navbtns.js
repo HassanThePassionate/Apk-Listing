@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from "react";
 import style from "../style/Navbar.module.css";
 const Navbtns = ({ menuhandle, open }) => {
+  // Create a state variable to store the theme and set it to "light-theme"
   const [theme, setTheme] = useState("light-theme");
+  // Create a function to toggle the theme
   const toggletheme = () => {
+    // If the theme is currently set to "dark-theme"
     if (theme === "dark-theme") {
+      // Set the theme to "light-theme"
       setTheme("light-theme");
+      // Otherwise
     } else {
+      // Set the theme to "dark-theme"
       setTheme("dark-theme");
     }
   };
+  // When the theme changes, add the correct class to the body
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
-
   return (
     <>
       <div className={style.btns}>

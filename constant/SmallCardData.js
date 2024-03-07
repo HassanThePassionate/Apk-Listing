@@ -1,8 +1,13 @@
+// Export an array of objects containing data about apps
 export const data = [
   {
+    // Image URL of the app
     img: "https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0=s64-rw",
+    // Title of the app
     title: "Temu: Shop Like a Billionaire",
+    // Category of the app
     catagory: "Shopping",
+    // Rating of the app
     rating: 4.7,
   },
   {

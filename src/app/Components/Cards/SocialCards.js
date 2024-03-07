@@ -23,6 +23,7 @@ const SocialCards = () => {
                         height={64}
                         width={64}
                         className={style.gameIcon}
+                        alt="img"
                       />
                     </div>
                   </div>

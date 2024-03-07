@@ -3,12 +3,14 @@ import React from "react";
 const MiniCardbtn = ({ Instance }) => {
   const goNext = () => {
     if (Instance) {
+      // call the slideNext method of the instance
       Instance.slideNext();
     }
   };
 
   const goPrev = () => {
     if (Instance) {
+      // call the slidePrev method of the instance
       Instance.slidePrev();
     }
   };

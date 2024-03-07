@@ -12,20 +12,28 @@ import style from "../style/Cards.module.css";
 
 const Cards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  // Number of slides to show at once.
   const [slidesPerView, setSlidesPerView] = useState(3);
   useEffect(() => {
+    // This function will handle the resizing of the slideshow based on the window size
     const handleResize = () => {
+      // If the window width is less than or equal to 1024 and greater than or equal to 600, set the slidesPerView to 2
       if (window.innerWidth <= 1024 && window.innerWidth >= 600) {
         setSlidesPerView(2);
+        // If the window width is less than or equal to 600, set the slidesPerView to 1
       } else if (window.innerWidth <= 600) {
         setSlidesPerView(1);
+        // Otherwise, set the slidesPerView to 3
       } else {
         setSlidesPerView(3);
       }
     };
 
+    // Call the handleResize function to set the slidesPerView on initial render
     handleResize();
+    // Add an event listener to listen for window resize events
     window.addEventListener("resize", handleResize);
+    // Return a function to remove the event listener when the component unmounts
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (

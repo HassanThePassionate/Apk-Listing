@@ -12,16 +12,22 @@ const MiniCard = ({ setSwiperInstance }) => {
   return (
     <>
       <Swiper
+        // Set the number of slides to view at a time.
         slidesPerView="auto"
+        // Set the space between each slide.
         spaceBetween={30}
+        // Set the swiper instance when the swiper is initialized.
         onSwiper={(swiper) => {
           setSwiperInstance(swiper);
         }}
+        // Set the next and previous elements.
         navigation={{
           nextEl: "#next",
           prevEl: "#prev",
         }}
+        // Enable the navigation module.
         modules={[Navigation]}
+        // Set a class name for the swiper.
         className="mySwiper"
       >
         {data.map((e, index) => {

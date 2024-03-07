@@ -1,7 +1,11 @@
+// Export an array of objects containing data about apps
 export const data = [
   {
+    // Image of the app
     img: "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s512-rw",
+    // Title of the app
     title: "WhatsApp Messenger",
+    // Description of the app
     description: "Communication",
   },
   {

@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import styles from "../style/Navbar.module.css";
 const MobileNav = (props) => {
   const [card, setCard] = useState(true);
+  //Function to toggle card display
   const cardHandle = () => {
     setCard(!card);
   };
 
+  //Function to hide the menu
   const hidemenu = () => {
     props.setShowMenu(true);
   };

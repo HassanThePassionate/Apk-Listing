@@ -315,6 +315,7 @@
 .sliderimage img {
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 .sliderimage {
   position: relative;

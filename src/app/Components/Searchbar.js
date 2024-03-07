@@ -4,13 +4,19 @@ const Searchbar = () => {
   const [input, setInput] = useState("");
   const clear = useRef(null);
 
+  // Handle input change
   const handleChange = (e) => {
+    // Set input value
     setInput(e.target.value);
+    // Reset clear animation
     clear.current.style.transform = "scale(1)";
   };
 
+  // Handle clear button
   const handleClear = () => {
+    // Set input value to empty string
     setInput("");
+    // Reset clear animation
     clear.current.style.transform = "scale(0)";
   };
   return (

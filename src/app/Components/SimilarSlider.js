@@ -8,33 +8,44 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const SimilarSlider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
-  const [slidesPerView, setSlidesPerView] = useState(3);
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  // Function to move to the next slide
   const goNexts = () => {
+    // Check if swiper instance is defined
     if (swiperInstance) {
+      // Move to the next slide
       swiperInstance.slideNext();
     }
   };
 
+  // Function to move to the previous slide
   const goPrevs = () => {
+    // Check if swiper instance is defined
     if (swiperInstance) {
+      // Move to the previous slide
       swiperInstance.slidePrev();
     }
   };
 
+  // Update swiper instance when window is resized
   useEffect(() => {
     const handleResize = () => {
+      // Set slides per view to 1 if window width is less than or equal to 600px
       if (window.innerWidth <= 600) {
         setSlidesPerView(1);
       } else {
-        setSlidesPerView(3);
+        // Otherwise, set slides per view to 3
+        setSlidesPerView(2);
       }
     };
 
+    // Call handleResize function to set slides per view on initial render
     handleResize();
+    // Add window resize listener to update slides per view when window is resized
     window.addEventListener("resize", handleResize);
+    // Return function to remove window resize listener when component is unmounted
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
   return (
     <>
       <Swiper

@@ -1,12 +1,16 @@
 const Sliderbtn = ({ Instance }) => {
+  //Function to call the next slide
   const goNexts = () => {
     if (Instance) {
+      //Call the next slide
       Instance.slideNext();
     }
   };
 
+  //Function to call the previous slide
   const goPrevs = () => {
     if (Instance) {
+      //Call the previous slide
       Instance.slidePrev();
     }
   };

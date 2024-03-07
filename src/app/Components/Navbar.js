@@ -12,10 +12,12 @@ const Navbar = () => {
   const [clears, setClear] = useState(false);
   const [showmenu, setShowMenu] = useState(true);
 
+  // open the clear button
   const open = () => {
     setClear(!clears);
   };
 
+  // handle the menu
   const menuhandle = () => {
     setShowMenu(false);
   };
