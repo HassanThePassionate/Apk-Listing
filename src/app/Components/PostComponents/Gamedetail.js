@@ -110,6 +110,7 @@ const Gamedetail = () => {
                       style={{
                         color: "rgb(154, 160, 166)",
                         marginRight: "10px",
+                        marginLeft: "5px",
                       }}
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 576 512"
