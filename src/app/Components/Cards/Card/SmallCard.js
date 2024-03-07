@@ -9,8 +9,8 @@ const SmallCard = () => {
       <div className={style.boxes}>
         {data.map((e, index) => {
           return (
-            <Link href="/post" className={style.linkbox}>
-              <div className={style.box} key={index}>
+            <Link href="/post" className={style.linkbox} key={index}>
+              <div className={style.box}>
                 <div className={style.boxImage}>
                   <Image src={e.img} alt="app" width={64} height={64} />
                 </div>

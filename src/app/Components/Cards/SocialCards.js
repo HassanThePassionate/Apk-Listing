@@ -10,7 +10,7 @@ const SocialCards = () => {
         return (
           <Link href="/post">
             <div className={style.cardListIteam} key={index}>
-              <div className={style.cardIteamContent} key={index}>
+              <div className={style.cardIteamContent}>
                 <div className={style.cardId}>
                   {/* <span className="num">No</span> */}
                   <span className={style.digit}>{index + 1}</span>
