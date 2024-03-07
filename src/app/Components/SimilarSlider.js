@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "../style/Postdeatail.module.css";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const SimilarSlider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [slidesPerView, setSlidesPerView] = useState(3);
   const goNexts = () => {
     if (swiperInstance) {
       swiperInstance.slideNext();
@@ -20,10 +21,24 @@ const SimilarSlider = () => {
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
