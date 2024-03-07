@@ -7,12 +7,15 @@
   align-items: flex-start;
   padding: 1rem !important;
   gap: 1rem;
-
+  min-width: 258px;
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s;
   cursor: pointer;
   margin-top: 10px;
+  width: 100%;
+}
+.linkbox {
   max-width: 33%;
   width: 100%;
   min-width: 258px;
