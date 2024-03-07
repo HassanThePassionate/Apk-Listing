@@ -8,8 +8,8 @@ const SocialCards = () => {
     <>
       {data.map((e, index) => {
         return (
-          <Link href="/post">
-            <div className={style.cardListIteam} key={index}>
+          <Link href="/post" key={index}>
+            <div className={style.cardListIteam}>
               <div className={style.cardIteamContent}>
                 <div className={style.cardId}>
                   {/* <span className="num">No</span> */}
