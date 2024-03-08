@@ -187,109 +187,146 @@ button:hover {
 }
 .footer {
   margin-top: 80px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   background-color: var(--box-color);
 }
-
-.links {
+.footer-upper {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--hover-color);
+}
+.socials {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  max-width: 100%;
 }
-.links .sub-links {
-  margin-left: 8px;
-  margin-right: 8px;
-  list-style: none;
-  vertical-align: middle;
+.socials-group {
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  margin: 0;
+  font-family: Roboto;
 }
-.sub-links a {
-  padding: 8px;
-  display: inline-block;
-  text-decoration: none;
-  background: none;
-  border: none;
-  color: var(--heading-color);
+.social-title {
+  flex: 0 0 auto;
+  padding-bottom: 0;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
   font-family: Roboto;
-}
-.ipc-link__launch-icon {
-  color: var(--heading-color);
-  height: 1em;
-  width: 1em;
-  margin-left: 0.4em;
-  font-size: 10px;
-}
-.sub-links a:hover {
-  text-decoration: underline;
-}
-.privacy {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  color: var(--primary-color);
 }
-.logo-footer {
-  min-height: 40px;
+.socials-text {
+  margin-right: 24px;
 }
-.logo-footer h4 {
-  font-size: 17px;
-  color: var(--star-color);
-  text-align: center;
-  font-weight: 400;
-  margin: 16px 0;
-  font-family: Roboto;
+.socials-group a {
+  color: #1967d2;
 }
-.company-logo {
+.socials-list {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 0;
+  max-width: 100%;
+  list-style: none;
+  align-self: center;
+}
+.socials-iteam {
+  flex: 0 0 auto;
   align-items: center;
+  align-self: center;
+  display: inline-flex;
+  height: 48px;
+  width: 48px;
+  margin-left: 0;
+  margin-right: 8px;
+}
+.socials-iteam a {
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
   justify-content: center;
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 2px;
 }
-.company-logo span {
+.socials-iteam a:hover {
+  background-color: var(--hover-color);
+}
+.footer svg {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  fill: var(--star-color);
+}
+.footer-global {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.footer-logo {
   background: var(--logo);
   aspect-ratio: 6 / 1;
-  background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
   min-width: 200px;
-  width: 200px;
-  align-items: flex-end;
+  width: 75px;
+  height: 24px;
+  flex: 0 0 75px;
+  margin: 13px 48px 32px 0;
+}
+
+.global-links {
   display: flex;
-  gap: 12px;
-  z-index: 102;
-  margin: 15px 0;
-}
-.last-svg {
-  fill: #5799ef;
-  width: 40px;
-  align-self: center;
-}
-.st2 {
-  fill: var(--secondary-color);
-}
-#y {
-  fill: rgb(0, 102, 255);
-}
-.st0 {
-  fill: var(--secondary-color);
-}
-.st1 {
-  fill: rgb(0, 102, 255);
-}
-/* .brands {
-  margin-top: 20px;
-}
-.brands-logo {
-  display: flex;
-  gap: 4.5rem;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-top: 1px solid rgb(74, 74, 74);
-  border-bottom: 1px solid rgb(74, 74, 74);
-} */
+  flex: 1 0 auto;
+  max-width: 100%;
+  list-style: none;
+  padding: 0 0 24px;
+}
+.glue-item {
+  display: inline;
+  padding-left: 24px;
+}
+.glue-footer-link {
+  color: #5f6368;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 0;
+  text-decoration: none;
+}
+.glue-form-dropdown {
+  height: 24px;
+
+  background-color: var(--box-color);
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+  color: #5f6368;
+  display: inline-block;
+  font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  margin: 0 0 0 15px;
+  padding: 0 24px 0 2px;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
 .sticky-wrapper {
   display: flex;
   /* align-items: center; */

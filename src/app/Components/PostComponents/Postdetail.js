@@ -4,11 +4,12 @@ import Link from "next/link";
 import style from "@/app/style/Postdeatail.module.css";
 import Image from "next/image";
 import SimilarSlider from "../SimilarSlider";
+import Tags from "./Tags";
 const Postdetail = () => {
   return (
     <>
       <div className={style.postDetail}>
-        <SimilarSlider />
+        <SimilarSlider slides="2" />
         <div className={style.aboutgame}>
           <div className={style.aboutTile}>
             <h2>About this game</h2>
@@ -43,6 +44,7 @@ const Postdetail = () => {
             <br />
           </div>
         </div>
+        <Tags />
         <div className={style.data}>
           <div className={style.aboutTile}>
             <h2>Data Safety</h2>

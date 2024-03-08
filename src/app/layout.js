@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Popup from "./Components/PostComponents/Popup";
 import "./globals.css";
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="light-theme">
+        {/* <Popup /> */}
         <Navbar />
         {children}
         <Footer />
