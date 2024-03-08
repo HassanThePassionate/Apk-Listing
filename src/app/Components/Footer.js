@@ -38,7 +38,7 @@ const Footer = () => {
                 Privacy
               </a>
             </li>
-            <li class="glue-list-item">
+            <li class="glue-item">
               <a
                 href="https://policies.google.com/terms?hl=en"
                 class="glue-footer-link"
