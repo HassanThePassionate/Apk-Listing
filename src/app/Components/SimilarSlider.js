@@ -124,6 +124,7 @@ const SimilarSlider = () => {
                 src="https://play-lh.googleusercontent.com/tkDyfbAGHnrHb9j4-Sbk1RyK_GtkHmmB-9VfHCVGg6p2hGJDmCZTIMEUDWXTA3M1S9c=w2560-h1440-rw"
                 alt="img"
                 width={736}
+                sas
                 height={414}
               />
             </div>
@@ -158,6 +159,7 @@ const SimilarSlider = () => {
           </SwiperSlide>
         </div>
       </Swiper>
+      {/* <Popup /> */}
     </>
   );
 };

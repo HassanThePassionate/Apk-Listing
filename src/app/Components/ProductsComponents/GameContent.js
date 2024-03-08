@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "@/app/style/Product.module.css";
+import Rating from "../PostComponents/Rating";
 
 const GameContent = () => {
   return (
@@ -32,7 +33,9 @@ const GameContent = () => {
           </div>
         </div>
       </div>
-      <div className={style.gameRates}></div>
+      <div className={style.postrating}>
+        <Rating />
+      </div>
     </div>
   );
 };

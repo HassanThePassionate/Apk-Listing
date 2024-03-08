@@ -380,27 +380,7 @@
     0 4px 8px 3px rgba(60, 64, 67, 0.15);
   cursor: pointer;
 }
-.popup {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.popup img {
-  max-height: 90%;
-  max-width: 80%;
-  object-fit: contain;
-  z-index: 10;
-}
+
 @media screen and (max-width: 1024px) {
   .Sidebar {
     display: none;

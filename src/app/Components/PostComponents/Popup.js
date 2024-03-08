@@ -1,17 +1,33 @@
-import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import style from "@/app/style/Postdeatail.module.css";
-const Popup = () => {
+
+const Popup = ({ isOpen, onClose, imageUrl }) => {
   return (
-    <div className={style.popup}>
-      <div className={style.overlay}></div>
-      <Image
-        src="https://play-lh.googleusercontent.com/wq8j0eajviPxSZHa51zj2VtkDhT2Tovdm6ByVQY99offUKmhJGVmbX-uSzlhIt2Ffg=w2560-h1440-rw"
-        alt="img"
-        width={736}
-        height={414}
-      />
-    </div>
+    <>
+      {isOpen && (
+        <div className={style.popupContainer}>
+          <div className={style.popupContent}>
+            <button className={style.closeButton} onClick={onClose}>
+              &times;
+            </button>
+            <Swiper slidesPerView={1} navigation className={style.popupSwiper}>
+              <SwiperSlide>
+                <div className={style.popupImage}>
+                  <Image
+                    src={imageUrl}
+                    alt="popup-image"
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
