@@ -13,7 +13,7 @@
   background-color: var(--box-color);
   width: 20%;
   position: sticky;
-  top: 10%;
+  top: 100px;
   height: 440px;
 
   border-radius: 12px;

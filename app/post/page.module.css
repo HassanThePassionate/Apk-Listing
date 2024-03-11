@@ -10,7 +10,7 @@
   background-color: var(--box-color);
   width: 20%;
   position: sticky;
-  top: 12%;
+  top: 100px;
   height: 455px;
 
   border-radius: 12px;
