@@ -1,0 +1,27 @@
+.rating {
+  font-size: 12px;
+  color: var(--star-color);
+  font-weight: 400;
+  letter-spacing: 0.0142857143em;
+  line-height: 1.25rem;
+  letter-spacing: 0.2px;
+}
+
+.c_rating {
+  align-items: center;
+  display: inline-flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.star_icon {
+  padding-left: 2px;
+  align-items: center;
+  display: inline-flex;
+  height: 100%;
+  color: var(--star-color);
+}
+.star_icon svg {
+  height: 10px;
+  width: 10px;
+}

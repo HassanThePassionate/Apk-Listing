@@ -1,0 +1,17 @@
+.layout_wrap {
+  display: flex;
+  gap: 1rem;
+}
+.layout_main {
+  width: 80%;
+}
+.layout_sidebar {
+  width: 20%;
+  background-color: var(--box-color);
+  width: 20%;
+  position: sticky;
+  top: 21%;
+  height: 440px;
+
+  border-radius: 12px;
+}

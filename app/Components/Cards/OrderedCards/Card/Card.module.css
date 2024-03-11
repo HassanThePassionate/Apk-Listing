@@ -1,0 +1,76 @@
+.cards {
+  height: 64px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.card {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.card:hover {
+  background-color: var(--hover-color);
+}
+.catagory {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.id {
+  width: 36px;
+  height: 30px;
+  margin-right: 9px;
+  display: flex;
+  color: var(--star-color);
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.4;
+}
+.digit {
+  font-size: 20px;
+  margin-left: 0;
+}
+.imgWrapper {
+  width: 64px;
+  height: 64px;
+}
+.svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  vertical-align: middle;
+  border-style: none;
+}
+.description {
+  flex: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+}
+.title {
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--primary-color);
+}
+.sub_title {
+  margin-top: 4px;
+  line-height: 16px;
+  font-size: 14px;
+  color: var(--star-color);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,31 @@
+.similar_game {
+  background-color: var(--box-color);
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 12px;
+}
+.title2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title2 h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 500;
+}
+.title1 {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title1 h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 500;
+}

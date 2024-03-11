@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe Ui, -apple-system, BlinkMacSystemFont, inter,
+    helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  background-color: var(--body-color);
+  padding-top: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+i svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}

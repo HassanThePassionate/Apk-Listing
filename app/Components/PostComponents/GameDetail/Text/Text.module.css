@@ -1,0 +1,33 @@
+.text {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(154, 160, 166);
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.text p {
+  font-size: 12px;
+  font-family: Roboto;
+  color: rgb(154, 160, 166);
+}
+.text2 {
+  display: flex;
+  align-items: center;
+}
+.text2 a {
+  color: rgb(154, 160, 166);
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: Roboto;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    padding-top: 10px;
+  }
+  .text2 a {
+    display: none;
+  }
+}

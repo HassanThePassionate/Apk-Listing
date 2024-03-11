@@ -1,0 +1,19 @@
+.posts {
+  background-color: var(--box1-color);
+  border-radius: 12px;
+}
+.wrapper {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 80px 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 70px 20px;
+  }
+}

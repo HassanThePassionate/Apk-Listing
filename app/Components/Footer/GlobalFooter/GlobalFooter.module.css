@@ -1,0 +1,43 @@
+.global_links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  max-width: 100%;
+  list-style: none;
+  padding: 0 0 24px;
+}
+.footer_item {
+  display: inline;
+  padding-left: 24px;
+}
+.glue_footer_link {
+  color: #5f6368;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 0;
+  text-decoration: none;
+}
+.glue_dropdown {
+  height: 24px;
+  background-color: var(--box-color);
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+  color: #5f6368;
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  margin: 0 0 0 8px;
+  padding: 0 24px 0 2px;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  width: 100%;
+}

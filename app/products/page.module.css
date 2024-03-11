@@ -1,0 +1,35 @@
+.layout_wrap {
+  display: flex;
+  gap: 1rem;
+}
+.layout_main {
+  width: 80%;
+  background-color: var(--box-color);
+  padding: 20px 80px;
+  border-radius: 16px;
+}
+.layout_sidebar {
+  width: 20%;
+  background-color: var(--box-color);
+  width: 20%;
+  position: sticky;
+  top: 10%;
+  height: 440px;
+
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .layout_sidebar {
+    display: none;
+  }
+  .layout_main {
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .layout_main {
+    padding: 20px 30px;
+  }
+}

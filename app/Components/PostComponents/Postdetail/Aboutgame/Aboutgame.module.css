@@ -1,0 +1,23 @@
+.about_game {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 600;
+}
+.description {
+  font-size: 14px;
+  color: var(--star-color);
+  font-family: Roboto;
+  line-height: 25px;
+}

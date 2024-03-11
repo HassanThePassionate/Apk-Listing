@@ -1,0 +1,43 @@
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+}
+.image {
+  position: relative;
+}
+.buttons button:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  transform: translate(0%, -50%);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--box-color);
+  left: 5px;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  cursor: pointer;
+}
+.buttons button:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  transform: translate(0%, -50%);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--box-color);
+  right: 5px;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: var(--hover-color);
+}

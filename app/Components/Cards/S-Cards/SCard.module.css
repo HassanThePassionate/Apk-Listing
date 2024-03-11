@@ -1,0 +1,8 @@
+.wrapper {
+  background-color: var(--box-color);
+  padding: 3rem;
+  border-radius: 15px;
+  --bs-gutter-x: 1.5rem;
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}

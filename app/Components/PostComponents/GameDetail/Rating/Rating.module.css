@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-top: 30px;
+}
+
+.rating {
+  padding-right: 16px;
+  text-align: center;
+}
+.rating svg {
+  fill: #fff;
+  padding-left: 3px;
+}
+
+.title {
+  font-size: 14px;
+  color: rgb(232, 234, 237);
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper p {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  white-space: nowrap;
+  color: rgb(154, 160, 166);
+}
+.downloads {
+  padding: 0 24px;
+  text-align: center;
+}
+.rated {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.line {
+  height: 24px;
+  border-left: 1px solid #3c4043;
+}
+
+@media screen and (max-width: 400px) {
+  .downloads {
+    padding: 0 16px;
+  }
+  .rated {
+    padding: 0 16px;
+  }
+  .rating {
+    padding-right: 12px;
+  }
+}

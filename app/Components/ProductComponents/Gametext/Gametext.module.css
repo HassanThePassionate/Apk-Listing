@@ -1,0 +1,34 @@
+.gameContent {
+  align-items: start;
+  display: flex;
+  border-top: 1px solid var(--hover-color);
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.text {
+  align-items: center;
+  display: flex;
+  margin: 16px 0;
+  width: 258px;
+}
+.title {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-color);
+}
+.description {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--star-color);
+}
+.sub_des span {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: var(--star-color);
+}

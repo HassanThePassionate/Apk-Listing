@@ -1,0 +1,17 @@
+.logo {
+  background: var(--logo);
+  aspect-ratio: 6 / 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 200px;
+  width: 75px;
+  height: 24px;
+  flex: 0 0 75px;
+  margin: 13px 48px 32px 0;
+}
+.logo img {
+  color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  width: 200px;
+}

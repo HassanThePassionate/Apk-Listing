@@ -1,0 +1,39 @@
+.footer {
+  margin-top: 80px;
+  background-color: var(--box-color);
+}
+.footer svg {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  fill: var(--star-color);
+}
+.footer_global {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.global_links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  max-width: 100%;
+  list-style: none;
+  padding: 0 0 24px;
+}
+.global_links li {
+  display: inline;
+  padding-left: 24px;
+}
+.glue_footer_link {
+  color: #5f6368;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 0;
+  text-decoration: none;
+}

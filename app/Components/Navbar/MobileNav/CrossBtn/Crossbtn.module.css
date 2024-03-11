@@ -1,0 +1,23 @@
+.cross_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.cross_btn i {
+  display: flex;
+  align-items: center;
+  opacity: 100;
+  color: var(--star-color);
+  align-items: center;
+  height: 16px;
+  justify-content: center;
+  max-width: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+.cross_btn i svg {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+  fill: currentColor;
+}
