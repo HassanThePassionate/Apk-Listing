@@ -21,7 +21,7 @@
 }
 
 .pagination li a {
-  color: #333;
+  color: var(--primary-color);
   text-decoration: none;
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -31,4 +31,19 @@
 
 .pagination li a:hover {
   background-color: #f4f4f4;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .pagination li {
+    margin: 0 3px;
+  }
+
+  .pagination li a {
+    padding: 6px 8px;
+  }
 }
