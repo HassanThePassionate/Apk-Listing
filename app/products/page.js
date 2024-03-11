@@ -6,6 +6,8 @@ import Heading from "../Components/ProductComponents/Heading/Heading";
 import Navbar from "../Components/Navbar/Navbar";
 import style from "./page.module.css";
 import Footer from "../Components/Footer/Footer";
+import Pagenation from "../Components/ProductComponents/Pagenation/Pagenation";
+
 const page = () => {
   return (
     <>
@@ -22,6 +24,7 @@ const page = () => {
               <GameContent />
               <GameContent />
               <GameContent />
+              <Pagenation />
             </div>
             <div className={style.layout_sidebar}></div>
           </div>
