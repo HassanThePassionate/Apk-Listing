@@ -41,7 +41,11 @@ const download = () => {
               <path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0m0 488.727C127.468 488.727 23.273 384.532 23.273 256S127.468 23.273 256 23.273 488.727 127.468 488.727 256 384.532 488.727 256 488.727"></path>
             </svg>
             <p>
-              For more help please visit <span>123</span>
+              For more help please visit{" "}
+              <span className={style.link}>
+                {" "}
+                <Link href="/"></Link>
+              </span>
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/Reset.css";
+import "../style/reset.css";
 import "../style/button.css";
-import "../style/Variable.css";
+import "../style/variable.css";
 import "../style/utility.css";
 import style from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
