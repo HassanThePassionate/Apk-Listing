@@ -2,14 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./BreadCrumb.module.css";
-import home from "/public/home.svg";
+
 const BreadCrumb = () => {
   return (
     <nav className={style.breadcrumb}>
       <ul className={style.list}>
         <li className={style.iteam}>
           <Link href="/">
-            <Image src={home} alt="img" height={12} width={12} />
             <span>Home</span>
           </Link>
         </li>
