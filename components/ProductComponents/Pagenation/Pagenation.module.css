@@ -1,49 +1,10 @@
 .pagination {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
-}
-
-.pagination ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.pagination li {
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.pagination li.active {
-  font-weight: bold;
-}
-
-.pagination li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.pagination li a:hover {
-  background-color: #f4f4f4;
 }
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   .pagination {
     margin-top: 20px;
-  }
-
-  .pagination li {
-    margin: 0 3px;
-  }
-
-  .pagination li a {
-    padding: 6px 8px;
   }
 }
