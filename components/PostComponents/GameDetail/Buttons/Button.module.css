@@ -25,13 +25,13 @@
 .install_btn:hover {
   background-color: #01875f;
 }
-.btn {
+.buttons .btn {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-.btn svg {
+.buttons .btn svg {
   fill: #00a173;
 }
 

@@ -1,8 +1,9 @@
 import React from "react";
 import style from "./Button.module.css";
+import Link from "next/link";
 const Buttons = () => {
   return (
-    <div className={style.buttons}>
+    <Link href="/download" className={style.buttons}>
       <button className={style.install_btn}>Install</button>
 
       <button className={style.btn}>
@@ -20,7 +21,7 @@ const Buttons = () => {
           ></path>
         </svg>
       </button>
-    </div>
+    </Link>
   );
 };
 
