@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Segoe Ui, -apple-system, BlinkMacSystemFont, inter,
-    helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji,
-    segoe ui symbol;
+  font-family: "Roboto";
 }
 html,
 body {
