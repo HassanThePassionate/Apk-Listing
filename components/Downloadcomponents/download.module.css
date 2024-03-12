@@ -79,3 +79,11 @@
 .download_help li a:hover {
   color: #05856e;
 }
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 20px;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+}

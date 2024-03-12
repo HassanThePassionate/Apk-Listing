@@ -29,3 +29,8 @@
   font-family: Roboto;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .similar_game {
+    padding: 20px;
+  }
+}

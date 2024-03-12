@@ -11,6 +11,7 @@
   padding: 20px;
   border-bottom: 1px solid var(--hover-color);
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .iteam:last-child {
   border-bottom: none;
@@ -51,4 +52,17 @@
 }
 .buttons button:hover {
   background-color: #01875f;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .wrapper {
+    padding: 15px;
+  }
+  .buttons button {
+    margin-top: 15px;
+  }
 }
