@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Similar from "@/components/PostComponents/Similar/Similar";
 import style from "./page.module.css";
-import Download from "@/components/download/Download";
+import Download from "@/components/Downloadcomponents/Download";
 
 const page = () => {
   return (
