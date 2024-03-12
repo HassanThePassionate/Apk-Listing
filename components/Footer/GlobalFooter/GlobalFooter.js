@@ -32,83 +32,89 @@ const GlobalFooter = () => {
             id="lang-selector"
             className={style.dropdown}
           >
-            <option value="/intl/af/docs/about/">Afrikaans</option>
-            <option value="/intl/en/docs/about/" selected="">
+            <option defaultValue="/intl/af/docs/about/">Afrikaans</option>
+            <option defaultValue="/intl/en/docs/about/" selected="">
               English
             </option>
-            <option value="/intl/am/docs/about/">አማርኛ</option>
-            <option value="/intl/ar/docs/about/">العربية</option>
-            <option value="/intl/az/docs/about/">azərbaycan</option>
-            <option value="/intl/bg/docs/about/">български</option>
-            <option value="/intl/bn/docs/about/">বাংলা</option>
-            <option value="/intl/ca/docs/about/">català</option>
-            <option value="/intl/cs/docs/about/">čeština</option>
-            <option value="/intl/da/docs/about/">dansk</option>
-            <option value="/intl/de/docs/about/">Deutsch</option>
-            <option value="/intl/el/docs/about/">Ελληνικά</option>
-            <option value="/intl/en-GB/docs/about/">
+            <option defaultValue="/intl/am/docs/about/">አማርኛ</option>
+            <option defaultValue="/intl/ar/docs/about/">العربية</option>
+            <option defaultValue="/intl/az/docs/about/">azərbaycan</option>
+            <option defaultValue="/intl/bg/docs/about/">български</option>
+            <option defaultValue="/intl/bn/docs/about/">বাংলা</option>
+            <option defaultValue="/intl/ca/docs/about/">català</option>
+            <option defaultValue="/intl/cs/docs/about/">čeština</option>
+            <option defaultValue="/intl/da/docs/about/">dansk</option>
+            <option defaultValue="/intl/de/docs/about/">Deutsch</option>
+            <option defaultValue="/intl/el/docs/about/">Ελληνικά</option>
+            <option defaultValue="/intl/en-GB/docs/about/">
               English (United Kingdom)
             </option>
-            <option value="/intl/es-419/docs/about/">
+            <option defaultValue="/intl/es-419/docs/about/">
               español (Latinoamérica)
             </option>
-            <option value="/intl/es/docs/about/">español</option>
-            <option value="/intl/et/docs/about/">eesti</option>
-            <option value="/intl/eu/docs/about/">euskara</option>
-            <option value="/intl/fa/docs/about/">فارسی</option>
-            <option value="/intl/fi/docs/about/">suomi</option>
-            <option value="/intl/fil/docs/about/">Filipino</option>
-            <option value="/intl/fr-CA/docs/about/">français (Canada)</option>
-            <option value="/intl/fr/docs/about/">français</option>
-            <option value="/intl/gl/docs/about/">galego</option>
-            <option value="/intl/gu/docs/about/">ગુજરાતી</option>
-            <option value="/intl/hi/docs/about/">हिन्दी</option>
-            <option value="/intl/hr/docs/about/">hrvatski</option>
-            <option value="/intl/hu/docs/about/">magyar</option>
-            <option value="/intl/hy/docs/about/">հայերեն</option>
-            <option value="/intl/id/docs/about/">Indonesia</option>
-            <option value="/intl/is/docs/about/">íslenska</option>
-            <option value="/intl/it/docs/about/">italiano</option>
-            <option value="/intl/iw/docs/about/">עברית (ישראל)</option>
-            <option value="/intl/ja/docs/about/">日本語</option>
-            <option value="/intl/ka/docs/about/">ქართული</option>
-            <option value="/intl/km/docs/about/">ខ្មែរ</option>
-            <option value="/intl/kn/docs/about/">ಕನ್ನಡ</option>
-            <option value="/intl/ko/docs/about/">한국어</option>
-            <option value="/intl/lo/docs/about/">ລາວ</option>
-            <option value="/intl/lt/docs/about/">lietuvių</option>
-            <option value="/intl/lv/docs/about/">latviešu</option>
-            <option value="/intl/ml/docs/about/">മലയാളം</option>
-            <option value="/intl/mn/docs/about/">монгол</option>
-            <option value="/intl/mr/docs/about/">मराठी</option>
-            <option value="/intl/ms/docs/about/">Melayu</option>
-            <option value="/intl/ne/docs/about/">नेपाली</option>
-            <option value="/intl/nl/docs/about/">Nederlands</option>
-            <option value="/intl/no/docs/about/">norsk bokmål (Norge)</option>
-            <option value="/intl/pl/docs/about/">polski</option>
-            <option value="/intl/pt-BR/docs/about/">português (Brasil)</option>
-            <option value="/intl/pt-PT/docs/about/">
+            <option defaultValue="/intl/es/docs/about/">español</option>
+            <option defaultValue="/intl/et/docs/about/">eesti</option>
+            <option defaultValue="/intl/eu/docs/about/">euskara</option>
+            <option defaultValue="/intl/fa/docs/about/">فارسی</option>
+            <option defaultValue="/intl/fi/docs/about/">suomi</option>
+            <option defaultValue="/intl/fil/docs/about/">Filipino</option>
+            <option defaultValue="/intl/fr-CA/docs/about/">
+              français (Canada)
+            </option>
+            <option defaultValue="/intl/fr/docs/about/">français</option>
+            <option defaultValue="/intl/gl/docs/about/">galego</option>
+            <option defaultValue="/intl/gu/docs/about/">ગુજરાતી</option>
+            <option defaultValue="/intl/hi/docs/about/">हिन्दी</option>
+            <option defaultValue="/intl/hr/docs/about/">hrvatski</option>
+            <option defaultValue="/intl/hu/docs/about/">magyar</option>
+            <option defaultValue="/intl/hy/docs/about/">հայերեն</option>
+            <option defaultValue="/intl/id/docs/about/">Indonesia</option>
+            <option defaultValue="/intl/is/docs/about/">íslenska</option>
+            <option defaultValue="/intl/it/docs/about/">italiano</option>
+            <option defaultValue="/intl/iw/docs/about/">עברית (ישראל)</option>
+            <option defaultValue="/intl/ja/docs/about/">日本語</option>
+            <option defaultValue="/intl/ka/docs/about/">ქართული</option>
+            <option defaultValue="/intl/km/docs/about/">ខ្មែរ</option>
+            <option defaultValue="/intl/kn/docs/about/">ಕನ್ನಡ</option>
+            <option defaultValue="/intl/ko/docs/about/">한국어</option>
+            <option defaultValue="/intl/lo/docs/about/">ລາວ</option>
+            <option defaultValue="/intl/lt/docs/about/">lietuvių</option>
+            <option defaultValue="/intl/lv/docs/about/">latviešu</option>
+            <option defaultValue="/intl/ml/docs/about/">മലയാളം</option>
+            <option defaultValue="/intl/mn/docs/about/">монгол</option>
+            <option defaultValue="/intl/mr/docs/about/">मराठी</option>
+            <option defaultValue="/intl/ms/docs/about/">Melayu</option>
+            <option defaultValue="/intl/ne/docs/about/">नेपाली</option>
+            <option defaultValue="/intl/nl/docs/about/">Nederlands</option>
+            <option defaultValue="/intl/no/docs/about/">
+              norsk bokmål (Norge)
+            </option>
+            <option defaultValue="/intl/pl/docs/about/">polski</option>
+            <option defaultValue="/intl/pt-BR/docs/about/">
+              português (Brasil)
+            </option>
+            <option defaultValue="/intl/pt-PT/docs/about/">
               português (Portugal)
             </option>
-            <option value="/intl/ro/docs/about/">română</option>
-            <option value="/intl/ru/docs/about/">русский</option>
-            <option value="/intl/si/docs/about/">සිංහල</option>
-            <option value="/intl/sk/docs/about/">slovenčina</option>
-            <option value="/intl/sl/docs/about/">slovenščina</option>
-            <option value="/intl/sr/docs/about/">српски</option>
-            <option value="/intl/sv/docs/about/">svenska</option>
-            <option value="/intl/sw/docs/about/">Kiswahili</option>
-            <option value="/intl/ta/docs/about/">தமிழ்</option>
-            <option value="/intl/te/docs/about/">తెలుగు</option>
-            <option value="/intl/th/docs/about/">ไทย</option>
-            <option value="/intl/tr/docs/about/">Türkçe</option>
-            <option value="/intl/uk/docs/about/">українська</option>
-            <option value="/intl/ur/docs/about/">اردو</option>
-            <option value="/intl/vi/docs/about/">Tiếng Việt</option>
-            <option value="/intl/zh-CN/docs/about/">中文 (简体)</option>
-            <option value="/intl/zh-HK/docs/about/">中文</option>
-            <option value="/intl/zh-TW/docs/about/">中文 (繁體)</option>
-            <option value="/intl/zu/docs/about/">isiZulu</option>
+            <option defaultValue="/intl/ro/docs/about/">română</option>
+            <option defaultValue="/intl/ru/docs/about/">русский</option>
+            <option defaultValue="/intl/si/docs/about/">සිංහල</option>
+            <option defaultValue="/intl/sk/docs/about/">slovenčina</option>
+            <option defaultValue="/intl/sl/docs/about/">slovenščina</option>
+            <option defaultValue="/intl/sr/docs/about/">српски</option>
+            <option defaultValue="/intl/sv/docs/about/">svenska</option>
+            <option defaultValue="/intl/sw/docs/about/">Kiswahili</option>
+            <option defaultValue="/intl/ta/docs/about/">தமிழ்</option>
+            <option defaultValue="/intl/te/docs/about/">తెలుగు</option>
+            <option defaultValue="/intl/th/docs/about/">ไทย</option>
+            <option defaultValue="/intl/tr/docs/about/">Türkçe</option>
+            <option defaultValue="/intl/uk/docs/about/">українська</option>
+            <option defaultValue="/intl/ur/docs/about/">اردو</option>
+            <option defaultValue="/intl/vi/docs/about/">Tiếng Việt</option>
+            <option defaultValue="/intl/zh-CN/docs/about/">中文 (简体)</option>
+            <option defaultValue="/intl/zh-HK/docs/about/">中文</option>
+            <option defaultValue="/intl/zh-TW/docs/about/">中文 (繁體)</option>
+            <option defaultValue="/intl/zu/docs/about/">isiZulu</option>
           </select>
         </li>
       </ul>
