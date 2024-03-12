@@ -44,7 +44,7 @@ const download = () => {
               For more help please visit{" "}
               <span className={style.link}>
                 {" "}
-                <Link href="/"></Link>
+                <Link href="/">FAQs</Link>
               </span>
             </p>
           </div>
