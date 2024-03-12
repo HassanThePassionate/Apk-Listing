@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/reset.css";
+import "../../style/reset.css";
 import "../../style/variable.css";
 import "../../style/utility.css";
 import style from "./page.module.css";
