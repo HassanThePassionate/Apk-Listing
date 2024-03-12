@@ -27,3 +27,6 @@
 .buttons button:hover {
   background: var(--hover-color);
 }
+.buttons svg {
+  fill: var(--primary-color);
+}
