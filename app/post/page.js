@@ -1,12 +1,14 @@
 import React from "react";
-import Gamedetail from "../Components/PostComponents/GameDetail/Gamedetail";
-import "../../style/Reset.css";
-import "../../style/Variable.css";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
-import Postdetail from "../Components/PostComponents/Postdetail/Postdetail";
-import Similar from "../Components/PostComponents/Similar/Similar";
+import "../../style/reset.css";
+import "../../style/variable.css";
+import "../../style/utility.css";
 import style from "./page.module.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Gamedetail from "@/components/PostComponents/GameDetail/Gamedetail";
+import Postdetail from "@/components/PostComponents/Postdetail/Postdetail";
+import Similar from "@/components/PostComponents/Similar/Similar";
+import Footer from "@/components/Footer/Footer";
+import Apk from "@/components/PostComponents/Apk/Apk";
 const page = () => {
   return (
     <>
@@ -17,6 +19,7 @@ const page = () => {
             <div className={style.layout_main}>
               <Gamedetail />
               <Postdetail />
+              <Apk />
               <Similar />
             </div>
             <div className={style.layout_sidebar}></div>

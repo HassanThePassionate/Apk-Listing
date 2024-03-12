@@ -8,7 +8,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import style from "./OrderedCard.module.css";
 
-import { data } from "../../../../constant/data";
+import { data } from "../../../constant/data";
 import Card from "./Card/Card";
 import Tabs from "./Tabs/Tabs";
 

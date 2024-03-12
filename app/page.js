@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import "../style/Reset.css";
+import "../style/reset.css";
 import "../style/button.css";
-import "../style/Variable.css";
+import "../style/variable.css";
 import "../style/utility.css";
 import style from "./page.module.css";
-import SCard from "./Components/Cards/S-Cards/SCard";
-import ThumbCards from "./Components/Cards/ThumbCards/ThumbCards";
-import OrderedCard from "./Components/Cards/OrderedCards/OrderedCard";
-import Footer from "./Components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import SCard from "@/components/Cards/S-Cards/SCard";
+import ThumbCards from "@/components/Cards/ThumbCards/ThumbCards";
+import OrderedCard from "@/components/Cards/OrderedCards/OrderedCard";
+import Footer from "@/components/Footer/Footer";
 const page = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const page = () => {
         <div className={style.layout_container}>
           <div className={style.layout_wrap}>
             <div className={style.layout_main}>
-              <SCard title="Popular Games" />
+              <SCard title="Popular Apps" />
               <SCard title="Popular Games" />
             </div>
             <div className={style.layout_sidebar}></div>

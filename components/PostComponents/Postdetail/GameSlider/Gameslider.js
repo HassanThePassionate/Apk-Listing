@@ -35,7 +35,7 @@ const Gameslider = () => {
         className="mySwiper"
       >
         <div className={style.buttons}>
-          <button onClick={goPrevs}>
+          <button onClick={goPrevs} className="l-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -52,7 +52,7 @@ const Gameslider = () => {
               ></path>
             </svg>
           </button>
-          <button onClick={goNexts}>
+          <button onClick={goNexts} className="r-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"

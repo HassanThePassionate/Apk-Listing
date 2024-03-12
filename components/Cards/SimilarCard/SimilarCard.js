@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Rating from "../Rating/Rating";
-import { data } from "../../../../constant/Similardata";
+import { data } from "../../../constant/Similardata";
 import style from "./SimilarCard.module.css";
 const SimilarCard = () => {
   return (

@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import style from "./Card.module.css";
 import Rating from "../../Rating/Rating";
-import { data } from "../../../../../constant/ThumbCard";
+import { data } from "../../../../constant/ThumbCard";
 const Card = ({ setSwiperInstance }) => {
   const renderSwiperSlides = () => {
     return data.map((entry, index) => (

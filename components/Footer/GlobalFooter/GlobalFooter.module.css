@@ -10,7 +10,7 @@
   display: inline;
   padding-left: 24px;
 }
-.glue_footer_link {
+.footer_link {
   color: #5f6368;
   display: inline-block;
   font-size: 16px;
@@ -22,7 +22,10 @@
   padding: 12px 0;
   text-decoration: none;
 }
-.glue_dropdown {
+.footer_link:hover {
+  text-decoration: underline;
+}
+.dropdown {
   height: 24px;
   background-color: var(--box-color);
   background-position: right 50%;

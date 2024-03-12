@@ -1,13 +1,12 @@
 import React from "react";
-import GameContent from "../Components/ProductComponents/GameContent";
 import "../../style/Reset.css";
 import "../../style/Variable.css";
-import Heading from "../Components/ProductComponents/Heading/Heading";
-import Navbar from "../Components/Navbar/Navbar";
 import style from "./page.module.css";
-import Footer from "../Components/Footer/Footer";
-import Pagenation from "../Components/ProductComponents/Pagenation/Pagenation";
-
+import Navbar from "@/components/Navbar/Navbar";
+import Heading from "@/components/ProductComponents/Heading/Heading";
+import GameContent from "@/components/ProductComponents/GameContent";
+import Pagenation from "@/components/ProductComponents/Pagenation/Pagenation";
+import Footer from "@/components/Footer/Footer";
 const page = () => {
   return (
     <>

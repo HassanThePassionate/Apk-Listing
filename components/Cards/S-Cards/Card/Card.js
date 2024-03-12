@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { data } from "../../../../../constant/SCard";
+import { data } from "../../../../constant/SCard";
 import style from "./Card.module.css";
 import Rating from "../../Rating/Rating";
 

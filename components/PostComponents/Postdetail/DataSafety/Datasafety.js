@@ -67,18 +67,8 @@ const Datasafety = () => {
             <div className={style.data_des}>Data can’t be deleted</div>
           </div>
         </div>
-        <div className="de" style={{ paddingTop: "15px", paddingLeft: "10px" }}>
-          <Link
-            href="/"
-            style={{
-              color: "#00a173",
-              fontFamily: "Roboto",
-              fontSize: "14px",
-              fontWeight: "500",
-            }}
-          >
-            See details
-          </Link>
+        <div className={style.detail}>
+          <Link href="/">See details</Link>
         </div>
       </div>
     </div>

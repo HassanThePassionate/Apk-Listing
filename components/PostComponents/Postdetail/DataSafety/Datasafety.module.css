@@ -64,3 +64,16 @@
   font-family: Roboto;
   line-height: 25px;
 }
+.detail a {
+  color: #00a173;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.detail a:hover {
+  color: #047e5c;
+}
+.detail {
+  padding-top: 15px;
+  padding-left: 10px;
+}

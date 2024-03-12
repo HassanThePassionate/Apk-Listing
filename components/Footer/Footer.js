@@ -15,7 +15,7 @@ const Footer = () => {
             <li className={style.iteam}>
               <Link
                 href="https://about.google/"
-                className={style.glue_footer_link}
+                className={style.footer_link}
                 target="_blank"
               >
                 About Google
@@ -24,7 +24,7 @@ const Footer = () => {
             <li className={style.iteam}>
               <Link
                 href="https://about.google/products/"
-                className={style.glue_footer_link}
+                className={style.footer_link}
                 target="_blank"
               >
                 Google products
@@ -33,7 +33,7 @@ const Footer = () => {
             <li className={style.iteam}>
               <Link
                 href="https://policies.google.com/privacy?hl=en"
-                className={style.glue_footer_link}
+                className={style.footer_link}
                 target="_blank"
               >
                 Privacy
@@ -42,7 +42,7 @@ const Footer = () => {
             <li className={style.iteam}>
               <Link
                 href="https://policies.google.com/terms?hl=en"
-                className={style.glue_footer_link}
+                className={style.footer_link}
                 target="_blank"
               >
                 Terms

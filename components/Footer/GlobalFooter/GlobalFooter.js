@@ -8,7 +8,7 @@ const GlobalFooter = () => {
         <li className={style.footer_iteam}>
           <Link
             href="https://support.google.com/?hl=en"
-            className={style.glue_footer_link}
+            className={style.footer_link}
             target="_blank"
           >
             <svg
@@ -30,7 +30,7 @@ const GlobalFooter = () => {
             aria-label="Change language or region"
             name="lang-selector"
             id="lang-selector"
-            className={style.glue_dropdown}
+            className={style.dropdown}
           >
             <option value="/intl/af/docs/about/">Afrikaans</option>
             <option value="/intl/en/docs/about/" selected="">
