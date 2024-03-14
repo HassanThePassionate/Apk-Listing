@@ -1,5 +1,3 @@
-"use client";
-import { useEffect } from "react";
 import "../style/Reset.css";
 import "../style/button.css";
 import "../style/Variable.css";
@@ -12,13 +10,6 @@ import OrderedCard from "@/components/Cards/OrderedCards/OrderedCard";
 import Footer from "@/components/Footer/Footer";
 
 const Page = () => {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
   return (
     <>
       <Navbar />
