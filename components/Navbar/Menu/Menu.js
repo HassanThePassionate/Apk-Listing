@@ -6,7 +6,7 @@ const Menu = () => {
     <>
       <ul className={style.menu}>
         <li className={style.menu_iteam}>
-          <Link href="/products" className={style.menu_text}>
+          <Link href="/lists" className={style.menu_text}>
             <i className={style.icon}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M0 80v160h224V52zm256-32v192h256V16zm0 224v192l256 32V272zM0 272v160l224 28V272z"></path>

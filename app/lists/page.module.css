@@ -1,0 +1,26 @@
+.layout_wrap {
+    display: flex;
+    gap: 2rem;
+  }
+  .layout_main {
+    width: 80%;
+  }
+  .layout_sidebar {
+    width: 20%;
+    background-color: var(--box-color);
+    width: 20%;
+    position: sticky;
+    top: 100px;
+    height: 455px;
+  
+    border-radius: 12px;
+  }
+  @media screen and (max-width: 1024px) {
+    .layout_sidebar {
+      display: none;
+    }
+    .layout_main {
+      width: 100%;
+    }
+  }
+  

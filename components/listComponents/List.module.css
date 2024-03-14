@@ -1,0 +1,22 @@
+.title {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 500;
+}
+.wrapper {
+  background-color: var(--box-color);
+  /* margin-top: 40px; */
+  padding: 40px;
+  border-radius: 12px;
+}
+.wrapper:nth-child(2),
+.wrapper:nth-child(3) {
+  margin-top: 40px;
+}

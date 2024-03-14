@@ -32,12 +32,13 @@ const Page = () => {
               <GameContent />
               <GameContent />
               <GameContent />
+              <Pagenation />
             </div>
+
             <div className={style.layout_sidebar}></div>
           </div>
         </div>
       </div>
-      <Pagenation />
 
       <Footer />
     </>
