@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useEffect } from "react";
 import "../style/Reset.css";
 import "../style/button.css";
 import "../style/Variable.css";
@@ -9,7 +10,15 @@ import SCard from "@/components/Cards/S-Cards/SCard";
 import ThumbCards from "@/components/Cards/ThumbCards/ThumbCards";
 import OrderedCard from "@/components/Cards/OrderedCards/OrderedCard";
 import Footer from "@/components/Footer/Footer";
-const page = () => {
+
+const Page = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
   return (
     <>
       <Navbar />
@@ -32,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

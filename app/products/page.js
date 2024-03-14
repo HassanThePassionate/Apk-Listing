@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import React from "react";
 import "../../style/Reset.css";
 import "../../style/Variable.css";
@@ -7,7 +9,14 @@ import Heading from "@/components/ProductComponents/Heading/Heading";
 import GameContent from "@/components/ProductComponents/GameContent";
 import Pagenation from "@/components/ProductComponents/Pagenation/Pagenation";
 import Footer from "@/components/Footer/Footer";
-const page = () => {
+const Page = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
   return (
     <>
       <Navbar />
@@ -35,4 +44,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

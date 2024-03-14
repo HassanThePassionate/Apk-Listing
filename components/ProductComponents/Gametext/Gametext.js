@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Gametext.module.css";
 const Gametext = () => {
   return (
