@@ -6,7 +6,6 @@ import "swiper/swiper-bundle.css";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./Card.module.css";
-
 import { data } from "../../../../constant/ThumbCard";
 import Rating from "@/components/Cards/Rating/Rating";
 const Card = ({ setSwiperInstance }) => {
