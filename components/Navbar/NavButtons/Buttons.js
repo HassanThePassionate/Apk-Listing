@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Buttons.module.css";
 import { useState, useEffect } from "react";
 const Buttons = ({ open, menuhandle }) => {
-  const [theme, setTheme] = useState("dark-theme");
+  const [theme, setTheme] = useState("light-theme");
 
   const toggleTheme = () => {
     setTheme(theme === "light-theme" ? "dark-theme" : "light-theme");

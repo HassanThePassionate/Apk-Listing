@@ -1,8 +1,8 @@
 import React from "react";
 import SimilarCard from "../Cards/SimilarCard/SimilarCard";
 import Arrowbtn from "../PostComponents/Postdetail/Arrowbtn/Arrowbtn";
-import style from "./List.module.css";
-const List = () => {
+import style from "./Home.module.css";
+const Home = () => {
   return (
     <>
       <div className={style.wrapper}>
@@ -32,4 +32,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default Home;
