@@ -1,10 +1,11 @@
 import React from "react";
+
 const Sliderbtn = ({ swiperInstance }) => {
   const handleSlide = (direction) => {
     if (swiperInstance) {
-      direction === "next"
-        ? swiperInstance.slideNext()
-        : swiperInstance.slidePrev();
+      direction === "prev"
+        ? swiperInstance.slidePrev()
+        : swiperInstance.slideNext();
     }
   };
 
