@@ -35,6 +35,7 @@ const OrderedCard = () => {
       <div className={style.cards}>
         <Swiper
           slidesPerView={slidesPerView}
+          speed={1100}
           spaceBetween={30}
           onSwiper={(swiper) => setSwiperInstance(swiper)}
           navigation={{

@@ -25,6 +25,7 @@ const Gameslider = () => {
     <>
       <Swiper
         slidesPerView={slidesPerView}
+        speed={1100}
         spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}

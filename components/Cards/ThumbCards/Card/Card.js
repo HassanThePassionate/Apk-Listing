@@ -27,6 +27,7 @@ const Card = ({ setSwiperInstance }) => {
 
   return (
     <Swiper
+      speed={800}
       slidesPerView="auto"
       spaceBetween={30}
       onSwiper={setSwiperInstance}
