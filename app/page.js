@@ -6,7 +6,7 @@ import style from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/HomeComponents/Home";
-import ThumbCards from "@/components/HomeComponents/ThumbCard/ThumbCard";
+import ThumbCard from "@/components/HomeComponents/ThumbCard/ThumbCard";
 
 const Page = () => {
   return (
@@ -22,7 +22,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <ThumbCards />
+      <ThumbCard />
       <Footer />
     </>
   );

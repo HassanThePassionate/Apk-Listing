@@ -7,7 +7,7 @@ import style from "./ThumbCards.module.css";
 import Arrowbtn from "@/components/PostComponents/Postdetail/Arrowbtn/Arrowbtn";
 import Image from "next/image";
 
-const ThumbCards = () => {
+const ThumbCard = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   return (
     <>
@@ -36,4 +36,4 @@ const ThumbCards = () => {
   );
 };
 
-export default ThumbCards;
+export default ThumbCard;
