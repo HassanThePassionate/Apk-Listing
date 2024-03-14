@@ -3,9 +3,11 @@ import React from "react";
 import "../../style/Reset.css";
 import "../../style/Variable.css";
 import "../../style/utility.css";
+import "../../style/button.css";
 import style from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import ThumbCards from "@/components/Cards/ThumbCards/ThumbCards";
 const page = () => {
   return (
     <>
@@ -20,6 +22,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <ThumbCards />
       <Footer />
     </>
   );

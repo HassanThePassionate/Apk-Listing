@@ -1,6 +1,6 @@
 .layout_wrap {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 .layout_main {
   width: 80%;
