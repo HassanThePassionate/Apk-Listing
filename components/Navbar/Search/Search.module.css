@@ -49,9 +49,11 @@
   z-index: 900;
   cursor: pointer;
 }
-.clear i svg {
+.clear {
   transform: scale(0);
   transition: transform 0.25s ease-in-out;
+}
+.clear i svg {
   fill: currentColor;
 }
 
