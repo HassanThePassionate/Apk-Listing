@@ -1,4 +1,3 @@
-import List from "@/components/listComponents/Home";
 import React from "react";
 import "../../style/Reset.css";
 import "../../style/Variable.css";
