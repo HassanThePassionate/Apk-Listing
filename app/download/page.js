@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Similar from "@/components/PostComponents/Similar/Similar";
 import style from "./page.module.css";
 import Download from "@/components/Downloadcomponents/Download";
+import Apk from "@/components/PostComponents/Apk/Apk";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
           <div className={style.layout_wrap}>
             <div className={style.layout_main}>
               <Download />
+              <Apk />
               <Similar />
             </div>
             <div className={style.layout_sidebar}></div>
