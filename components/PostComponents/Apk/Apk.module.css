@@ -4,6 +4,18 @@
   margin-top: 30px;
   padding: 20px 30px;
 }
+.title {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 600;
+}
 .iteam {
   align-items: center;
   display: flex;

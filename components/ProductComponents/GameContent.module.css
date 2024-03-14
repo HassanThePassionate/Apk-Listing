@@ -1,8 +1,18 @@
 .game_content {
   align-items: start;
   display: flex;
-  padding: 20px 0;
-  flex-wrap: wrap;
+  padding: 1rem !important;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 50%;
+  width: 100%;
+  min-width: 258px;
+}
+.game_content:hover {
+  background-color: var(--hover-color);
 }
 
 .content {

@@ -1,8 +1,13 @@
 import React from "react";
 import style from "./Apk.module.css";
+import Arrowbtn from "../Postdetail/Arrowbtn/Arrowbtn";
 const Apk = () => {
   return (
     <div className={style.wrapper}>
+      <div className={style.title}>
+        <h2>Version History</h2>
+        <Arrowbtn />
+      </div>
       <div className={style.iteam}>
         <div className={style.iteam_text}>
           <h2>v4.8.16.8 Mod APK (Unlimited Currency)</h2>

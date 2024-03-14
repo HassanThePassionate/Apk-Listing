@@ -31,11 +31,11 @@
 }
 .title h2 {
   text-align: left;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 500;
   color: var(--heading-color);
   line-height: 32px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 600px) {
   .text h2 {

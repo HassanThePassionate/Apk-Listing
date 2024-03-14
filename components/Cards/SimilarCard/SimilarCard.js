@@ -3,11 +3,12 @@ import Image from "next/image";
 import Rating from "../Rating/Rating";
 import { data } from "../../../constant/Similardata";
 import style from "./SimilarCard.module.css";
+import Link from "next/link";
 const SimilarCard = () => {
   return (
     <div className={style.cards}>
       {data.map((item, index) => (
-        <div className={style.card} key={index}>
+        <Link href="/post" key={index} className={style.card}>
           <div className={style.image}>
             <Image src={item.img} alt="app" width={64} height={64} />
           </div>
@@ -22,7 +23,7 @@ const SimilarCard = () => {
               <Rating />
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
