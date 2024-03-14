@@ -49,6 +49,7 @@
   border: none;
   font-weight: 400;
   transition: all 0.3s;
+  color: #fff;
 }
 .buttons button:hover {
   background-color: #01875f;
