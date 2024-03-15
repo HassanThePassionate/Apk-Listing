@@ -4,8 +4,9 @@ import "../../style/Variable.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import style from "./page.module.css";
-import Download from "@/components/DownloadComponents/Download";
+
 import Apk from "@/components/PostComponents/Apk/Apk";
+import Download from "@/components/DownloadComponents/Download";
 import Similar from "@/components/DownloadComponents/Similar/Similar";
 
 const page = () => {
