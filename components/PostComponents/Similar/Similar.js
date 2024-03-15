@@ -5,13 +5,8 @@ import style from "./Similar.module.css";
 const Similar = () => {
   return (
     <div className={style.similar_game}>
-      <div className={style.title1}>
+      <div className={style.title}>
         <h2>Similar Games</h2>
-        <Arrowbtn />
-      </div>
-      <SimilarCard />
-      <div className={style.title2}>
-        <h2>More by OppanaGames FZC LLC</h2>
         <Arrowbtn />
       </div>
       <SimilarCard />

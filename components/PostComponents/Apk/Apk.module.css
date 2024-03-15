@@ -91,4 +91,8 @@
   .buttons button {
     margin-top: 15px;
   }
+  .iteam_text {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
