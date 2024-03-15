@@ -3,7 +3,7 @@ import style from "./Button.module.css";
 import Link from "next/link";
 const Buttons = () => {
   return (
-    <div href="/download" className={style.buttons}>
+    <div href="/download" className={style.btns}>
       <Link href="/download" className={style.button}>
         <i className={style.icon}>
           <svg

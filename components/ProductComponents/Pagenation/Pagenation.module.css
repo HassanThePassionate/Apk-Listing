@@ -1,0 +1,10 @@
+.pagination {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .pagination {
+    margin-top: 20px;
+  }
+}
