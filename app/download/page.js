@@ -7,7 +7,7 @@ import style from "./page.module.css";
 
 import Apk from "@/components/PostComponents/Apk/Apk";
 import Download from "@/components/DownloadComponents/Download";
-import Similar from "@/components/DownloadComponents/Similar/Similar";
+import Similar from "@/components/PostComponents/Similar/Similar";
 
 const page = () => {
   return (
