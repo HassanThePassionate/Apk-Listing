@@ -1,26 +1,25 @@
 .game_content {
   align-items: start;
   display: flex;
-  padding: 1rem !important;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.3s;
-  cursor: pointer;
-  margin-top: 10px;
-  max-width: 50%;
-  width: 100%;
-  min-width: 258px;
-}
-.game_content:hover {
-  background-color: var(--hover-color);
+  flex-wrap: wrap;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid var(--hover-color);
   flex-wrap: wrap;
+  padding: 1rem !important;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  min-width: 258px;
+}
+.content:hover {
+  background-color: var(--hover-color);
 }
 .postrating {
   display: flex;
@@ -56,4 +55,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.postrating span svg {
+  fill: var(--star-color);
 }

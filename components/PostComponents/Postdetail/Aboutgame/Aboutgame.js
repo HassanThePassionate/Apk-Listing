@@ -1,12 +1,11 @@
 import React from "react";
 import style from "./Aboutgame.module.css";
-import Arrowbtn from "../Arrowbtn/Arrowbtn";
+
 const Aboutgame = () => {
   return (
     <div className={style.about_game}>
       <div className={style.title}>
         <h2>About this game</h2>
-        <Arrowbtn />
       </div>
       <div className={style.description}>
         Play the most realistic driving simulator of 2023! (version 1.49.5)

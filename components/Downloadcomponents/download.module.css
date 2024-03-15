@@ -7,14 +7,14 @@
 }
 
 .title h2 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1;
   margin-bottom: 5px;
   color: var(--primary-color);
 }
 .title a {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 24px;
   color: var(--star-color);
@@ -40,13 +40,13 @@
   text-align: center;
   text-transform: uppercase;
   transition: all 0.25s ease-in-out;
-  border: 1px solid #05856e;
-  color: #05856e;
+  background-color: #00a173;
+  color: #ffff;
+  border-radius: 999999px;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #05856e;
-  color: #ffff;
+  background-color: #01875f;
 }
 .icon {
   --icon-size: 16px;

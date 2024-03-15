@@ -26,11 +26,17 @@ const Page = () => {
             <div className={style.layout_main}>
               <Heading />
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
+              <div className={style.line}></div>
               <GameContent />
               <Pagenation />
             </div>

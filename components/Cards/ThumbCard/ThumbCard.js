@@ -1,20 +1,25 @@
 "use client";
 import React, { useState } from "react";
-import Heading from "../S-Cards/Heading/Heading";
+
 import Sliderbtn from "./Button/Sliderbtn";
 import Card from "./Card/Card";
 import style from "./ThumbCards.module.css";
+import Arrowbtn from "@/components/PostComponents/Postdetail/Arrowbtn/Arrowbtn";
 
-const ThumbCards = () => {
+const ThumbCard = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   return (
     <>
       <div className="container">
-        <div className={style.text}>
-          <Heading title="Recommended" />
-          <Sliderbtn swiperInstance={swiperInstance} />
-        </div>
         <div className={style.slider}>
+          <div className={style.text}>
+            <div className={style.title}>
+              <h2>Trending Apps</h2>
+              <Arrowbtn />
+            </div>
+
+            <Sliderbtn swiperInstance={swiperInstance} />
+          </div>
           <div className={style.wrapper}>
             <Card setSwiperInstance={setSwiperInstance} />
           </div>
@@ -24,4 +29,4 @@ const ThumbCards = () => {
   );
 };
 
-export default ThumbCards;
+export default ThumbCard;

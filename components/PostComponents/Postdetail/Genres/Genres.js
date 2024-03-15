@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import style from "./Tags.module.css";
-const Tags = () => {
+import style from "./Genres.module.css";
+const Genres = () => {
   return (
     <div>
       <div className={style.tags}>
+        <h2 className={style.title}>Genres</h2>
         <ul className={style.list}>
           <li className={style.tag}>
             <Link href="/">Simulation</Link>
@@ -33,4 +34,4 @@ const Tags = () => {
   );
 };
 
-export default Tags;
+export default Genres;

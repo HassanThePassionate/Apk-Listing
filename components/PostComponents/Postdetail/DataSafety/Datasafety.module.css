@@ -7,11 +7,11 @@
 .iteam {
   align-items: flex-start;
   display: flex;
-  padding-top: 20px;
 }
 
 .iteam img {
   margin-right: 20px;
+  margin-top: 20px;
 }
 .data_des {
   color: rgb(95, 99, 104);
@@ -28,6 +28,7 @@
   font-size: 14px;
   letter-spacing: 0.025em;
   font-weight: 400;
+  padding-top: 20px;
 }
 .data_des a {
   color: rgb(95, 99, 104);

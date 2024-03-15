@@ -18,7 +18,11 @@
 
   border-radius: 12px;
 }
-
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--hover-color);
+}
 @media screen and (max-width: 1024px) {
   .layout_sidebar {
     display: none;

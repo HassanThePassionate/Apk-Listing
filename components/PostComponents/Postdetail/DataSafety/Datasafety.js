@@ -1,15 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Arrowbtn from "../Arrowbtn/Arrowbtn";
 import style from "./Datasafety.module.css";
 const Datasafety = () => {
   return (
     <div className={style.data}>
       <div className={style.title}>
         <h2>Data Safety</h2>
-
-        <Arrowbtn />
       </div>
       <div className={style.description}>
         Safety starts with understanding how developers collect and share your
@@ -18,7 +15,7 @@ const Datasafety = () => {
         it over time.
       </div>
       <div className={style.wrapper}>
-        <div className={style.iteam1}>
+        <div className={style.iteam}>
           <Image
             src="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s20-rw"
             alt="img"
