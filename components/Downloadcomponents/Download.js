@@ -17,7 +17,7 @@ const Download = () => {
               The Last of Us Part I Digital Deluxe Edition
             </Link>
           </div>
-          <a className={style.button}>
+          <Link href="/" className={style.button}>
             <i className={style.icon}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Download = () => {
             </i>
 
             <span class={style.btn_text}>Click to Download</span>
-          </a>
+          </Link>
           <ul className={style.download_help}>
             <li>
               <i className={style.icon}>

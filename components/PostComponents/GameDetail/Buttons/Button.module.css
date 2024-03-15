@@ -4,25 +4,27 @@
   gap: 2rem;
   padding-top: 40px;
 }
-.install_btn {
+.button {
+  background-color: var(--btn-color);
+  color: #ffff;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
-  min-width: 160px;
-  padding: 0 16px 0 16px;
+  gap: 5px;
+  min-width: 170px;
+  padding: 0 16px;
   border-radius: 8px;
   transition: all 0.3s;
-  background-color: var(--btn-color);
   border: none;
   font-size: 14px;
   letter-spacing: 0.0107142857em;
   font-weight: 500;
-  color: #202124;
   text-transform: none;
   cursor: pointer;
 }
-.install_btn:hover {
+.button:hover {
   background-color: #01875f;
 }
 .buttons .btn {
@@ -30,7 +32,10 @@
   border: none;
   cursor: pointer;
 }
-
+.button svg {
+  margin-top: 5px;
+  fill: #ffff;
+}
 .buttons .btn svg {
   fill: #00a173;
 }

@@ -4,7 +4,26 @@ import Link from "next/link";
 const Buttons = () => {
   return (
     <Link href="/download" className={style.buttons}>
-      <button className={style.install_btn}>Install</button>
+      <Link href="/" className={style.button}>
+        <i className={style.icon}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            class="BrandBanner_downloadIcon__amQpo"
+            height={20}
+            width={20}
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M9 2a1 1 0 0 0-1 1v6.166L5.122 6.292a1 1 0 0 0-1.414 1.416l4.588 4.582.003.004.004.003a.997.997 0 0 0 1.409 0l.711-.71 3.87-3.864a1 1 0 0 0-.001-1.414 1 1 0 0 0-1.416 0L10 9.18V3a1 1 0 0 0-1-1M4 16a1 1 0 1 1 0-2h10a1 1 0 1 1 0 2z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </i>
+
+        <span class={style.btn_text}>Install</span>
+      </Link>
 
       <button className={style.btn}>
         <svg width="24" height="24" viewBox="0 0 24 24">
