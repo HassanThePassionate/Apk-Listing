@@ -16,14 +16,10 @@
 .global_links {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 0 auto;
+  gap: 1.5rem;
   max-width: 100%;
   list-style: none;
   padding: 0 0 24px;
-}
-.global_links li {
-  display: inline;
-  padding-left: 24px;
 }
 .footer_link {
   color: var(--primary-color);
