@@ -28,13 +28,21 @@
   background-color: #01875f;
 }
 .buttons .btn {
-  background: transparent;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  padding: 2px;
+  transition: all 0.3s;
 }
 .button svg {
   margin-top: 5px;
   fill: #ffff;
+}
+.buttons .btn:hover {
+  background-color: #3a3b3c;
 }
 .buttons .btn svg {
   fill: #00a173;
