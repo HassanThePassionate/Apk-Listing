@@ -30,3 +30,17 @@
 .buttons svg {
   fill: var(--primary-color);
 }
+
+@media screen and (max-width: 600px) {
+  .buttons button {
+    height: 40px;
+    width: 40px;
+    transform: translate(0%, -50%);
+  }
+  .buttons button:first-child {
+    left: 1px;
+  }
+  .buttons button:last-child {
+    right: 1px;
+  }
+}
