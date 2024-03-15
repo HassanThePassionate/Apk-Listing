@@ -13,7 +13,7 @@
   padding: 0 16px 0 16px;
   border-radius: 8px;
   transition: all 0.3s;
-  background-color: #00a173;
+  background-color: var(--btn-color);
   border: none;
   font-size: 14px;
   letter-spacing: 0.0107142857em;
