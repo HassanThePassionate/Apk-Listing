@@ -4,11 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import lock from "../../public/lock.svg";
 import information from "../../public/information.svg";
-import BreadCrumb from "../PostComponents/GameDetail/BreadCrumb/BreadCrumb";
 const Download = () => {
   return (
     <>
-      <BreadCrumb />
       <div className={style.wrapper}>
         <div className={style.text}>
           <div className={style.title}>
