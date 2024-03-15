@@ -5,9 +5,9 @@ import "../../style/Reset.css";
 import "../../style/Variable.css";
 import style from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
-import Heading from "@/components/ProductComponents/Heading/Heading";
-import GameContent from "@/components/ProductComponents/GameContent";
-import Pagenation from "@/components/ProductComponents/Pagenation/Pagenation";
+import Heading from "@/components/productComponents/Heading/Heading";
+import GameContent from "@/components/productComponents/GameContent";
+import Pagenation from "@/components/productComponents/Pagenation/Pagenation";
 import Footer from "@/components/Footer/Footer";
 const Page = () => {
   useEffect(() => {

@@ -6,11 +6,11 @@ import "../../style/Variable.css";
 import "../../style/utility.css";
 import style from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
-import Gamedetail from "@/components/PostComponents/GameDetail/Gamedetail";
-import Postdetail from "@/components/PostComponents/Postdetail/Postdetail";
-import Similar from "@/components/PostComponents/Similar/Similar";
+import Gamedetail from "@/components/postComponents/GameDetail/Gamedetail";
+import Postdetail from "@/components/postComponents/Postdetail/Postdetail";
+import Similar from "@/components/postComponents/Similar/Similar";
 import Footer from "@/components/Footer/Footer";
-import Apk from "@/components/PostComponents/Apk/Apk";
+import Apk from "@/components/postComponents/Apk/Apk";
 const Page = () => {
   useEffect(() => {
     (async () => {
