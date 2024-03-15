@@ -5,9 +5,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import style from "./page.module.css";
 
-import Apk from "@/components/postComponents/Apk/Apk";
+import Apk from "@/components/PostComponents/Apk/Apk";
 import Download from "@/components/downloadComponents/Download";
-import Similar from "@/components/postComponents/Similar/Similar";
+import Similar from "@/components/PostComponents/Similar/Similar";
 
 const page = () => {
   return (
