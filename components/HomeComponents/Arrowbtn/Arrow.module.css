@@ -1,0 +1,15 @@
+.arrow {
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.arrow:hover {
+  background-color: var(--hover-color);
+}
+@media screen and (max-width: 600px) {
+  .arrow {
+    margin-top: 12px;
+  }
+}

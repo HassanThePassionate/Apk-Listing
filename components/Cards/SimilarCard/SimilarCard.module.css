@@ -7,7 +7,6 @@
   align-items: flex-start;
   padding: 1rem !important;
   gap: 1rem;
-
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s;
@@ -55,5 +54,8 @@
 @media screen and (max-width: 600px) {
   .card h3 {
     font-size: 15px;
+  }
+  .card {
+    max-width: 100%;
   }
 }

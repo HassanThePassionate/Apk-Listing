@@ -1,13 +1,16 @@
 import React from "react";
 import SimilarCard from "../Cards/SimilarCard/SimilarCard";
-import Arrowbtn from "../PostComponents/Postdetail/Arrowbtn/Arrowbtn";
+
 import style from "./Home.module.css";
+import Arrowbtn from "./Arrowbtn/Arrowbtn";
+
 const Home = () => {
   return (
     <>
       <div className={style.wrapper}>
         <div className={style.title}>
           <h2>Similar Games</h2>
+
           <Arrowbtn />
         </div>
         <SimilarCard />

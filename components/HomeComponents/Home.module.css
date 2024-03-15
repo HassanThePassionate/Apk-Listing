@@ -19,3 +19,24 @@
 .wrapper:nth-child(3) {
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 15px;
+  }
+  .wrapper:nth-child(2),
+  .wrapper:nth-child(3) {
+    margin-top: 30px;
+  }
+  .title h2 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .title {
+    padding-bottom: 0;
+  }
+}
