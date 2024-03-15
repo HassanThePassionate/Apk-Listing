@@ -40,7 +40,7 @@
   text-align: center;
   text-transform: uppercase;
   transition: all 0.25s ease-in-out;
-  background-color: #00a173;
+  background-color: var(--btn-color);
   color: #ffff;
   border-radius: 999999px;
   cursor: pointer;

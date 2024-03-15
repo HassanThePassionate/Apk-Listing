@@ -1,7 +1,6 @@
 .global_links {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 0 auto;
   max-width: 100%;
   list-style: none;
   padding: 0 0 24px;
@@ -34,7 +33,7 @@
   border-radius: 0;
   color: #5f6368;
   display: inline-block;
-
+  outline: none;
   font-size: 16px;
   font-weight: 500;
   height: 48px;

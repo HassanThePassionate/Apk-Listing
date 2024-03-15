@@ -4,6 +4,11 @@
   margin-top: 30px;
   padding: 40px;
 }
+.iteam_text {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
 .title {
   padding-top: 10px;
   display: flex;
@@ -15,6 +20,14 @@
   color: var(--primary-color);
   font-family: Roboto;
   font-weight: 600;
+}
+.iteam_text {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.apk_icon svg {
+  fill: var(--star-color);
 }
 .iteam {
   align-items: center;
@@ -54,7 +67,7 @@
   padding-top: 10px;
 }
 .buttons button {
-  background-color: #00a173;
+  background-color: var(--btn-color);
   padding: 12px 20px;
   border-radius: 99999px;
   cursor: pointer;
