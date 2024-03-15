@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import style from "./page.module.css";
 
 import Apk from "@/components/PostComponents/Apk/Apk";
-import Download from "@/components/downloadComponents/Download";
+import Download from "@/components/DownloadComponents/Download.js";
 import Similar from "@/components/PostComponents/Similar/Similar";
 
 const page = () => {

@@ -3,8 +3,8 @@ import style from "./Button.module.css";
 import Link from "next/link";
 const Buttons = () => {
   return (
-    <Link href="/download" className={style.buttons}>
-      <Link href="/" className={style.button}>
+    <div href="/download" className={style.buttons}>
+      <Link href="/download" className={style.button}>
         <i className={style.icon}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Buttons = () => {
           ></path>
         </svg>
       </button>
-    </Link>
+    </div>
   );
 };
 
