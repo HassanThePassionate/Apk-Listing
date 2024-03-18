@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import style from "./Search.module.css";
-
+import { useRouter } from "next/navigation";
 const Searchbar = () => {
   const [input, setInput] = useState("");
   const clear = useRef(null);
-
+  const router = useRouter();
   const handleChange = (e) => {
     setInput(e.target.value);
     clear.current.style.transform = e.target.value ? "scale(1)" : "scale(0)";
@@ -15,8 +15,13 @@ const Searchbar = () => {
     clear.current.style.transform = "scale(0)";
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push("/products");
+  };
+
   return (
-    <form className={style.search}>
+    <form className={style.search} onSubmit={handleSubmit}>
       <i className={style.search_icon}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
