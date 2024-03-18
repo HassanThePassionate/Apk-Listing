@@ -13,39 +13,28 @@ const Footer = () => {
           <Logo />
           <ul className={style.global_links}>
             <li className={style.iteam}>
-              <Link
-                href="https://about.google/"
-                className={style.footer_link}
-                target="_blank"
-              >
-                About Google
+              <Link href="/" className={style.footer_link}>
+                Home
               </Link>
             </li>
             <li className={style.iteam}>
-              <Link
-                href="https://about.google/products/"
-                className={style.footer_link}
-                target="_blank"
-              >
-                Google products
+              <Link href="/download" className={style.footer_link}>
+                Downloads
               </Link>
             </li>
             <li className={style.iteam}>
-              <Link
-                href="https://policies.google.com/privacy?hl=en"
-                className={style.footer_link}
-                target="_blank"
-              >
-                Privacy
+              <Link href="/version-history" className={style.footer_link}>
+                Version-History
               </Link>
             </li>
             <li className={style.iteam}>
-              <Link
-                href="https://policies.google.com/terms?hl=en"
-                className={style.footer_link}
-                target="_blank"
-              >
-                Terms
+              <Link href="/products" className={style.footer_link}>
+                Products
+              </Link>
+            </li>
+            <li className={style.iteam}>
+              <Link href="/cookies" className={style.footer_link}>
+                Cookies
               </Link>
             </li>
           </ul>

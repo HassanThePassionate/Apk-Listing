@@ -16,7 +16,7 @@ const Gameslider = () => {
     <>
       <div className={style.gameslider}>
         <Swiper
-          slidesPerView={"auto"}
+          slidesPerView={1}
           speed={1100}
           spaceBetween={30}
           modules={[Navigation]}
