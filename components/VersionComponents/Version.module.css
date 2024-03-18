@@ -1,0 +1,12 @@
+.game_content {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper {
+  background-color: var(--box-color);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+}

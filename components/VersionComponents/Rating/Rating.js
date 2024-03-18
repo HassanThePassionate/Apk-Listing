@@ -29,12 +29,12 @@ const Rating = () => {
         <div className={style.line}></div>
         <div className={style.rated}>
           <Image
-            src="data:image/webp;base64,UklGRlYBAABXRUJQVlA4TEoBAAAvIcAHENVAsbZtmfJjM3tCG0twpznJPc6huib35O7u7iRP7g6/vrMGpj+ZDfiLQ1bQto1k/hCHYBzuyQQwjiSpTRIU+UcELxeJR+oJcBhBfyQBxLorW6+oPwqiEI/4IHx5hNXTBXYArkEcBoFPYPiDKhwCx2imMAul03ECbaB8DUawDiNYBTMfYgfbUtOJXkn2owUAHMXMbBCgRj5RALYkSoZmQwCQCaYBgDNIpEKrUgDIA3MfmmHqjCAAHWiRqR6nUHMOADgAs1NA4S7UVAJAopjZVQQAMAdmrkJ+FKAEngCK9f+fq2OoGISIZdMAsLSiUAHIgty9JicBALOg6YGI5ZOgiQEA/KRgUyuxBA0AoDAUKFWwA9GQaCYg2gLNu+gKNGOoQg0eqoJpCI3jLwBU4fGtuwqiEI/4IHyJBqye7jCC7kog1l3ZekU="
-            alt="Rated For 7+"
+            src="https://play-lh.googleusercontent.com/mw_NfsvKM8m6RPv8Fz2GQawCOsqWv010saMnc7zbWalMxuaA9IY8h7E0VMieLxSxAFB98NFeYqbFrXXq=w48-h16-rw"
+            alt="Teen"
             width={16}
             height={16}
           />
-          <p>Rated For 7+</p>
+          <p>Teen</p>
         </div>
       </div>
     </>
