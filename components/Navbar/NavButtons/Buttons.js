@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import style from "./Buttons.module.css";
 
