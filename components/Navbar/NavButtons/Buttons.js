@@ -4,20 +4,26 @@ import style from "./Buttons.module.css";
 
 const Buttons = ({ open, menuhandle }) => {
   const [theme, setTheme] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
-    return storedTheme || "light-theme";
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
+      return storedTheme || "light-theme";
+    }
+    return "light-theme";
   });
 
   const toggleTheme = () => {
     const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
-    localStorage.setItem("theme", newTheme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", newTheme);
+    }
     setTheme(newTheme);
   };
 
   useEffect(() => {
-    document.body.className = theme;
+    if (typeof window !== "undefined") {
+      document.body.className = theme;
+    }
   }, [theme]);
-
   return (
     <div className={style.buttons}>
       <button className={style.search_icon} onClick={open}>
