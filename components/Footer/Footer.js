@@ -18,6 +18,11 @@ const Footer = () => {
               </Link>
             </li>
             <li className={style.iteam}>
+              <Link href="/post" className={style.footer_link}>
+                Posts
+              </Link>
+            </li>
+            <li className={style.iteam}>
               <Link href="/download" className={style.footer_link}>
                 Downloads
               </Link>
