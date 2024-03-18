@@ -8,9 +8,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-
       <Cookies />
-
       <Footer />
     </>
   );
