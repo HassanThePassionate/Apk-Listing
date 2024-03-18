@@ -1,16 +1,22 @@
-import React from "react";
-import style from "./Buttons.module.css";
 import { useState, useEffect } from "react";
+import style from "./Buttons.module.css";
+
 const Buttons = ({ open, menuhandle }) => {
-  const [theme, setTheme] = useState("light-theme");
+  const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    return storedTheme || "light-theme";
+  });
 
   const toggleTheme = () => {
-    setTheme(theme === "light-theme" ? "dark-theme" : "light-theme");
+    const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
+    localStorage.setItem("theme", newTheme);
+    setTheme(newTheme);
   };
 
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+
   return (
     <div className={style.buttons}>
       <button className={style.search_icon} onClick={open}>
@@ -22,26 +28,31 @@ const Buttons = ({ open, menuhandle }) => {
       <button className={style.mode_icon} onClick={toggleTheme}>
         {theme === "dark-theme" ? (
           <svg fill="none" viewBox="0 0 24 24">
-            <path
-              d="M12 20v2m0-20v2m8 8h2M2 12h2m14 6 1.5 1.5m-15-15L6 6m12 0 1.5-1.5m-15 15L6 18m11-6a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
-              stroke="stroke-current"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
+            <svg fill="none" viewBox="0 0 24 24">
+              <path
+                d="M12 20v2m0-20v2m8 8h2M2 12h2m14 6 1.5 1.5m-15-15L6 6m12 0 1.5-1.5m-15 15L6 18m11-6a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
+                stroke="stroke-current"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
           </svg>
         ) : (
           <svg fill="none" viewBox="0 0 24 24">
-            <path
-              d="M3 11.449C3 16.724 7.169 21 12.312 21c3.959 0 7.34-2.534 8.688-6.107a8.074 8.074 0 0 1-3.515.8c-4.571 0-8.277-3.8-8.277-8.489 0-1.961.648-3.767 1.737-5.204C6.45 2.678 3 6.65 3 11.449Z"
-              stroke="stroke-current"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
+            <svg fill="none" viewBox="0 0 24 24">
+              <path
+                d="M3 11.449C3 16.724 7.169 21 12.312 21c3.959 0 7.34-2.534 8.688-6.107a8.074 8.074 0 0 1-3.515.8c-4.571 0-8.277-3.8-8.277-8.489 0-1.961.648-3.767 1.737-5.204C6.45 2.678 3 6.65 3 11.449Z"
+                stroke="stroke-current"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
           </svg>
         )}
       </button>
+
       <button className={style.humburger_btn} onClick={menuhandle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
