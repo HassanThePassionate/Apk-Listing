@@ -1,11 +1,11 @@
 .light-theme {
   --primary-color: #000000;
   --secondary-color: #ffffff;
-  --body-color: #f4f7f9;
+  --body-color: #ffff;
   --heading-color: #11143b;
   --star-color: rgb(95, 99, 104);
   --hover-color: #f0f0f0;
-  --boder-color: #f5f7f9;
+  --boder-color: #d9dbdd;
   --box-color: #ffff;
   --input-color: #f4f7f9;
   --view-color: #fff;
