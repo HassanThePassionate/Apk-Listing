@@ -4,7 +4,7 @@ const LeftSide = () => {
   return (
     <div>
       <ul
-        className='flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full'
+        className='flex flex-col  space-y-3 md:px-11 font-bold w-full'
         id={style.list}
       >
         <li className='flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit  hover:cursor-pointer px-5 py-3 hover:rounded-full'>
