@@ -1,0 +1,9 @@
+#list li:hover {
+  background-color: var(--hover-color);
+}
+#list li {
+  color: var(--primary-color);
+}
+#list li span svg {
+  fill: var(--primary-color);
+}

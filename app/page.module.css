@@ -5,6 +5,11 @@
 .layout_main {
   width: 70%;
 }
+.left {
+  position: sticky;
+  top: 10%;
+  height: 485px;
+}
 .layout_sidebar {
   width: 22%;
   background-color: var(--box-color);
