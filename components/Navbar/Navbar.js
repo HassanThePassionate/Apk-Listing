@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect } from "react";
 import { useState } from "react";
 import Logo from "./logo/Logo";
 import Searchbar from "./Search/Searchbar";
@@ -22,14 +21,12 @@ const Navbar = () => {
       ) : (
         showmenu && (
           <header className={style.header}>
-            <div className={style.container}>
-              <nav className={style.navbar}>
-                <Logo />
-                <Searchbar />
-                <Menu />
-                <Buttons menuhandle={menuhandle} open={open} />
-              </nav>
-            </div>
+            <nav className={style.navbar}>
+              <Logo />
+              <Searchbar />
+              <Menu />
+              <Buttons menuhandle={menuhandle} open={open} />
+            </nav>
           </header>
         )
       )}
