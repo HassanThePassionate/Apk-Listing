@@ -1,6 +1,5 @@
 .footer_upper {
   padding: 24px 0;
-  border-bottom: 1px solid var(--hover-color);
 }
 .socials {
   display: flex;

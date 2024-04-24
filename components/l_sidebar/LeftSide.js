@@ -131,7 +131,9 @@ const LeftSide = () => {
           <span className='hidden md:block'>Profile</span>
         </li>
         <li
-          className='flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit   hover:cursor-pointer px-5 py-3 hover:rounded-full'
+          className={` ${
+            opens ? "visible" : "hidden"
+          } flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit   hover:cursor-pointer px-5 py-3 hover:rounded-full`}
           onClick={openhandle}
         >
           <span>
