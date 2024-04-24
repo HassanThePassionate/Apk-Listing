@@ -12,19 +12,19 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <div className='container'>
-        <div className={style.layout_container}>
-          <div className={style.layout_wrap}>
-            <div className={style.left}>
-              <LeftSide />
-            </div>
-            <div className={style.layout_main}>
-              <Home />
-            </div>
-            <div className={style.layout_sidebar}></div>
+
+      <div className={style.layout_container}>
+        <div className={style.layout_wrap}>
+          <div className={style.left}>
+            <LeftSide />
           </div>
+          <div className={style.layout_main}>
+            <Home />
+          </div>
+          <div className={style.layout_sidebar}></div>
         </div>
       </div>
+
       <Footer />
     </>
   );

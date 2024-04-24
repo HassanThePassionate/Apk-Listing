@@ -1,19 +1,15 @@
 .layout_wrap {
   display: flex;
   gap: 1rem;
+  padding: 0 10px;
 }
 .layout_main {
-  width: 60%;
+  flex: 4;
 }
-.left {
-  position: sticky;
-  top: 10%;
-  height: 590px;
-}
+
 .layout_sidebar {
-  width: 22%;
+  flex: 1;
   background-color: var(--box-color);
-  width: 20%;
   position: sticky;
   top: 100px;
   border-radius: 12px;
