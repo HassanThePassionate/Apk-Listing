@@ -22,6 +22,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "clipground.com",
       },
+      {
+        protocol: "https",
+        hostname: "pic.clubic.com",
+      },
     ],
   },
 };
