@@ -3,12 +3,12 @@
   gap: 1rem;
 }
 .layout_main {
-  width: 70%;
+  width: 60%;
 }
 .left {
   position: sticky;
   top: 10%;
-  height: 485px;
+  height: 480px;
 }
 .layout_sidebar {
   width: 22%;
@@ -16,7 +16,6 @@
   width: 20%;
   position: sticky;
   top: 100px;
-
   border-radius: 12px;
 }
 
