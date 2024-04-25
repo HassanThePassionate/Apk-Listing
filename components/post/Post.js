@@ -39,7 +39,10 @@ const Post = () => {
               <p className={style.para}>
                 A modified and more complete WhatsApp
               </p>
-              <div className='downloads_r flex items-center gap-[80px]'>
+              <div
+                className=' flex items-center gap-[80px]'
+                id={style.downloads_r}
+              >
                 <div className={style.rating}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -153,23 +156,6 @@ const Post = () => {
                       </svg>
                     </span>
                     <span>Share</span>
-                  </div>
-                  <div className={style.whishlist}>
-                    <span>
-                      <svg
-                        width='24'
-                        height='24'
-                        viewBox='0 0 24 24'
-                        class='aThNrd'
-                      >
-                        <path
-                          fill-rule='evenodd'
-                          clip-rule='evenodd'
-                          d='M7 3H17C18.1045 3 19 3.8955 19 5V21L12 18L5 21L5.01075 5C5.01075 3.8955 5.8965 3 7 3ZM12 15.824L17 18V5H7V18L12 15.824ZM13 7V9H15V11H13V13H11V11H9V9H11V7H13Z'
-                        ></path>
-                      </svg>
-                    </span>
-                    <span>Add to Whishlist</span>
                   </div>
                 </div>
               </div>

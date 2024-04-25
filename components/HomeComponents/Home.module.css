@@ -99,3 +99,21 @@
   text-align: center;
   white-space: nowrap;
 }
+@media screen and (max-width: 764px) {
+  .card {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .img {
+    width: 170px;
+  }
+  .btn {
+    margin-top: 0;
+  }
+  .img_text {
+    width: 170px;
+  }
+  .para {
+    width: 284px;
+  }
+}

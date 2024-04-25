@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./slider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,10 +17,28 @@ const Slider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const goNexts = () => swiperInstance && swiperInstance.slideNext();
   const goPrevs = () => swiperInstance && swiperInstance.slidePrev();
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(2);
+      }
+    };
+
+    handleResize(); // Set initial slidesPerView based on window width
+    window.addEventListener("resize", handleResize); // Add event listener for window resize
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+    };
+  }, []);
   return (
     <div className={style.wrapper}>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
+        spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
         navigation={{
