@@ -2,12 +2,13 @@ import React from "react";
 import { data } from "@/constant/data";
 import style from "./Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
     <>
       <div className={style.wrapper}>
-        <div className={style.cards}>
+        <Link href={"/posts"} className={style.cards}>
           {data.map((ele) => {
             return (
               <div className={style.card} key={ele.title}>
@@ -111,7 +112,7 @@ const Home = () => {
               </div>
             );
           })}
-        </div>
+        </Link>
       </div>
     </>
   );
