@@ -6,6 +6,7 @@
   font-weight: 700;
   line-height: 31px;
   margin-bottom: 30px;
+  color: var(--primary-color);
 }
 .card {
   display: flex;
