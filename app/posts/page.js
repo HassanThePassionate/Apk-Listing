@@ -6,19 +6,21 @@ import Post from "@/components/post/Post";
 
 const page = () => {
   return (
-    <div className={style.layout_container}>
-      <div className={style.layout_wrap}>
-        <div className={style.left}>
-          <LeftSide />
-        </div>
-        <div className={style.layout_main}>
-          <Post />
-        </div>
-        <div className={style.layout_sidebar}>
-          <Sidebar />
+    <>
+      <div className={style.layout_container}>
+        <div className={style.layout_wrap}>
+          <div className={style.left}>
+            <LeftSide />
+          </div>
+          <div className={style.layout_main}>
+            <Post />
+          </div>
+          <div className={style.layout_sidebar}>
+            <Sidebar />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

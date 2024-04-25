@@ -124,7 +124,21 @@ const Post = () => {
               </div>
               <div className={style.btns}>
                 <div className='button'>
-                  <button className={style.btn}>Install on Windows</button>
+                  <button className={style.btn}>
+                    {" "}
+                    <span>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 512 512'
+                        height={20}
+                        width={20}
+                        fill='#fff'
+                      >
+                        <path d='M0 80v160h224V52zm256-32v192h256V16zm0 224v192l256 32V272zM0 272v160l224 28V272z'></path>
+                      </svg>
+                    </span>
+                    Install on Windows
+                  </button>
                 </div>
                 <div className={style.icons}>
                   <div className={style.share}>
