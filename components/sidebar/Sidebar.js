@@ -9,7 +9,7 @@ const Sidebar = () => {
       <div className={style.cards}>
         {data.map((elm) => {
           return (
-            <div className={style.card}>
+            <div className={style.card} key={elm.title}>
               <div className={style.image}>
                 <div className={style.img}>
                   <Image src={elm.img} alt='img' width={40} height={40} />
