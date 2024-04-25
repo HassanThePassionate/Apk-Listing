@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <div className={style.wrapper}>
-        <Link href={"/posts"} className={style.cards}>
+        <Link href='/posts' className={style.cards}>
           {data.map((ele) => {
             return (
               <div className={style.card} key={ele.title}>
