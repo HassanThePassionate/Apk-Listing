@@ -9,7 +9,7 @@
   display: flex;
   flex-flow: initial;
   gap: 30px;
-  padding: 50px 0px 0px;
+  padding: 24px 0px 0px;
   width: 600px;
 }
 .card_content {
