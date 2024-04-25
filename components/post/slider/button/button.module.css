@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:last-child {
+  right: 3px;
+}
+.btn:first-child {
+  left: 3px;
+}
