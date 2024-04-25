@@ -10,7 +10,6 @@
 }
 
 .layout_sidebar {
-  flex: 1;
   background-color: var(--box-color);
   position: sticky;
   top: 100px;
