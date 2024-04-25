@@ -1,3 +1,4 @@
+import Sidebar from "@/components/sidebar/Sidebar";
 import "../style/Reset.css";
 
 import "../style/Variable.css";
@@ -17,7 +18,9 @@ const Page = () => {
           <div className={style.layout_main}>
             <Home />
           </div>
-          <div className={style.layout_sidebar}></div>
+          <div className={style.layout_sidebar}>
+            <Sidebar />
+          </div>
         </div>
       </div>
     </>
