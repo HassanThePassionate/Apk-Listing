@@ -10,7 +10,7 @@ const Home = () => {
         <div className={style.cards}>
           {data.map((ele) => {
             return (
-              <div className={style.card} key={elm.title}>
+              <div className={style.card} key={ele.title}>
                 <div className='img_text'>
                   <div className={style.img}>
                     <Image src={ele.img} width={120} height={120} />
