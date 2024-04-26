@@ -254,4 +254,28 @@
   .page {
     display: none;
   }
+  .wrapper {
+    border: none;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .paras {
+    font-size: 14px;
+    width: 260px;
+  }
+  .para {
+    font-size: 14px;
+    width: 230px;
+  }
+  .rating {
+    display: none;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .btn svg {
+    width: 16px;
+    height: 16px;
+  }
 }
