@@ -18,6 +18,12 @@ const Slider = () => {
   const goNexts = () => swiperInstance && swiperInstance.slideNext();
   const goPrevs = () => swiperInstance && swiperInstance.slidePrev();
   const [slidesPerView, setSlidesPerView] = useState(2);
+  const [isClient, setIsClient] = useState(true);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 900) {
@@ -34,6 +40,7 @@ const Slider = () => {
       window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
     };
   }, []);
+
   return (
     <div className={style.wrapper}>
       <Swiper
@@ -41,13 +48,17 @@ const Slider = () => {
         spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
-        navigation={{
-          nextEl: "#nexts",
-          prevEl: "#prevs",
-        }}
+        navigation={
+          isClient
+            ? {
+                nextEl: "#nexts",
+                prevEl: "#prevs",
+              }
+            : false
+        }
         className='mySwiper w-full max-w-[1100px]  '
       >
-        <Buttons next={goNexts} pre={goPrevs} />
+        {isClient && <Buttons next={goNexts} pre={goPrevs} />}
         <SwiperSlide>
           <div className={style.slide}>
             <Image

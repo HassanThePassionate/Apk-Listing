@@ -16,7 +16,11 @@
   border-radius: 12px;
   padding-right: 20px;
 }
-
+@media screen and (max-width: 1360px) {
+  .layout_main {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1270px) {
   .layout_sidebar {
     display: none;

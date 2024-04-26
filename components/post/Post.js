@@ -29,16 +29,18 @@ const Post = () => {
           <div className={style.card}>
             <div className='img_text'>
               <div className={style.img}>
-                <Image src='/2.webp' width={120} height={120} />
+                <Image
+                  src='https://play-lh.googleusercontent.com/c15fVxquhZ_LO5jPc-f2nYpz-EHvphyniI4JCKG8hYd-yXkhq5k4WpSJMu-M9S3vIA=s464-rw'
+                  width={120}
+                  height={120}
+                />
               </div>
               <p className={style.img_text}>Updated : 04/22/2024</p>
             </div>
 
             <div className={style.card_content}>
-              <div className={style.title}>GBWhatsApp</div>
-              <p className={style.para}>
-                A modified and more complete WhatsApp
-              </p>
+              <div className={style.title}>Asphalt 9: Legends</div>
+              <p className={style.para}>The New Trending Games in 2024</p>
               <div
                 className=' flex items-center gap-[80px]'
                 id={style.downloads_r}
@@ -128,7 +130,6 @@ const Post = () => {
               <div className={style.btns}>
                 <div className='button'>
                   <button className={style.btn}>
-                    {" "}
                     <span>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'

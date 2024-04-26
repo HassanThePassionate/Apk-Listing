@@ -3,7 +3,7 @@ import style from "./button.module.css";
 const Buttons = ({ next, pre }) => {
   return (
     <div className={style.wrapper}>
-      <div className={style.btn} onClick={pre}>
+      <div className={`${style.btn} ${style.prev}`} onClick={pre}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 320 512'
@@ -20,7 +20,7 @@ const Buttons = ({ next, pre }) => {
           ></path>
         </svg>
       </div>
-      <div className={style.btn} onClick={next}>
+      <div className={`${style.btn} ${style.next}`} onClick={next}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 320 512'
