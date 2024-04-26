@@ -123,5 +123,25 @@
   }
   .card {
     width: 70vw;
+    gap: 0;
+  }
+  .wrapper {
+    border: 0;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .rating {
+    font-size: 12px;
+  }
+  .rating svg {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .para {
+    font-size: 14px;
+    width: 230px;
   }
 }
