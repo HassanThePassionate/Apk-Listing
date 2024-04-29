@@ -7,6 +7,9 @@ import Slider from "./slider/Slider";
 import Arrowbtn from "./arrowBtn/Arrowbtn";
 
 const Post = () => {
+  let des =
+    "  Even after more than 20 years the game is still THE rts-gem. The DLCs are very nice too. Costly over the years, but I will still buy every single one. It´s no problem if keeping up with the very competetive PvP is too stressfull for you, PvE is always thriving, the singleplayer campaigns are gold and can in part even be played with your buddies - those without the official means to do so have respective mods available. I have spent several hundered hours in this game, in PvE, PvP, campaign and Coop, and there are still tons of content i havent seen yet.";
+  let description = des.substring(0, 250) + "...";
   return (
     <>
       <div className={style.wrapper}>
@@ -151,7 +154,7 @@ const Post = () => {
                         width='24'
                         height='24'
                         viewBox='0 0 24 24'
-                        class='f70z8e'
+                        className='f70z8e'
                       >
                         <path d='M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z'></path>
                       </svg>
@@ -268,6 +271,356 @@ const Post = () => {
             >
               See Detail
             </Link>
+          </div>
+          <div className={style.reviews}>
+            <h3
+              className='text-[22px] leading-[28px] font-medium mt-[20px] pb-[20px]'
+              id={style.recent}
+            >
+              Recent reviews
+            </h3>
+            <div className={style.review_cards}>
+              <div className={style.review_card}>
+                <div className={style.left}>
+                  <div className={style.user_report}>
+                    <div className={style.more_icon}></div>
+                  </div>
+                  <Link href='#' className={style.follow}>
+                    <Image
+                      src='https://gaming-cdn.com/themes/igv2/images/avatar2.svg'
+                      width={50}
+                      height={50}
+                      alt='img'
+                      className='rounded-full'
+                    />
+                  </Link>
+                  <div className={style.like}>
+                    <Image
+                      src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                      alt='img'
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                </div>
+                <div className={style.review_text}>
+                  <span className={style.text_content} id='text'>
+                    {description}
+                  </span>
+                  <ul className={style.props_cons}>
+                    <li className={style.pros}>Premium PvE / Campaigns</li>
+                    <li className={style.pros}>
+                      Living comminity / mods / ranked
+                    </li>
+                    <li className={style.pros}>Constantly updated</li>
+                    <li className={style.cons}>
+                      even in unranked PvP is very sweaty
+                    </li>
+                    <li className={style.cons}>
+                      why are you still reading ? play already xD
+                    </li>
+                  </ul>
+                  <div className={style.user}>
+                    <span className='flex flex-col' style={{ display: "none" }}>
+                      <span className='text-[14px]'>27th February 2024</span>
+                    </span>
+                    <div className={style.usefull}>
+                      <div className={style.ask}>Useful?</div>
+                      <div className={style.votes}>
+                        <Link
+                          href='#'
+                          title='Useful? YES'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_like_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                          <span className={style.positive}>0</span>
+                        </Link>
+                        <Link
+                          href='#'
+                          title='Useful? NO'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_dislike_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-dislike.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Link href='#' className={style.read_more}>
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              <div className={style.review_card}>
+                <div className={style.left}>
+                  <div className={style.user_report}>
+                    <div className={style.more_icon}></div>
+                  </div>
+                  <Link href='#' className={style.follow}>
+                    <Image
+                      src='https://gaming-cdn.com/themes/igv2/images/avatar2.svg'
+                      width={50}
+                      height={50}
+                      alt='img'
+                      className='rounded-full'
+                    />
+                  </Link>
+                  <div className={style.like}>
+                    <Image
+                      src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                      alt='img'
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                </div>
+                <div className={style.review_text}>
+                  <span className={style.text_content} id='text'>
+                    {description}
+                  </span>
+                  <ul className={style.props_cons}>
+                    <li className={style.pros}>Premium PvE / Campaigns</li>
+                    <li className={style.pros}>
+                      Living comminity / mods / ranked
+                    </li>
+                    <li className={style.pros}>Constantly updated</li>
+                    <li className={style.cons}>
+                      even in unranked PvP is very sweaty
+                    </li>
+                    <li className={style.cons}>
+                      why are you still reading ? play already xD
+                    </li>
+                  </ul>
+                  <div className={style.user}>
+                    <span className='flex flex-col' style={{ display: "none" }}>
+                      <span className='text-[14px]'>27th February 2024</span>
+                    </span>
+                    <div className={style.usefull}>
+                      <div className={style.ask}>Useful?</div>
+                      <div className={style.votes}>
+                        <Link
+                          href='#'
+                          title='Useful? YES'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_like_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                          <span className={style.positive}>0</span>
+                        </Link>
+                        <Link
+                          href='#'
+                          title='Useful? NO'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_dislike_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-dislike.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Link href='#' className={style.read_more}>
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              <div className={style.review_card}>
+                <div className={style.left}>
+                  <div className={style.user_report}>
+                    <div className={style.more_icon}></div>
+                  </div>
+                  <Link href='#' className={style.follow}>
+                    <Image
+                      src='https://gaming-cdn.com/themes/igv2/images/avatar2.svg'
+                      width={50}
+                      height={50}
+                      alt='img'
+                      className='rounded-full'
+                    />
+                  </Link>
+                  <div className={style.like}>
+                    <Image
+                      src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                      alt='img'
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                </div>
+                <div className={style.review_text}>
+                  <span className={style.text_content} id='text'>
+                    {description}
+                  </span>
+                  <ul className={style.props_cons}>
+                    <li className={style.pros}>Premium PvE / Campaigns</li>
+                    <li className={style.pros}>
+                      Living comminity / mods / ranked
+                    </li>
+                    <li className={style.pros}>Constantly updated</li>
+                    <li className={style.cons}>
+                      even in unranked PvP is very sweaty
+                    </li>
+                    <li className={style.cons}>
+                      why are you still reading ? play already xD
+                    </li>
+                  </ul>
+                  <div className={style.user}>
+                    <span className='flex flex-col' style={{ display: "none" }}>
+                      <span className='text-[14px]'>27th February 2024</span>
+                    </span>
+                    <div className={style.usefull}>
+                      <div className={style.ask}>Useful?</div>
+                      <div className={style.votes}>
+                        <Link
+                          href='#'
+                          title='Useful? YES'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_like_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                          <span className={style.positive}>0</span>
+                        </Link>
+                        <Link
+                          href='#'
+                          title='Useful? NO'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_dislike_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-dislike.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Link href='#' className={style.read_more}>
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              <div className={style.review_card}>
+                <div className={style.left}>
+                  <div className={style.user_report}>
+                    <div className={style.more_icon}></div>
+                  </div>
+                  <Link href='#' className={style.follow}>
+                    <Image
+                      src='https://gaming-cdn.com/themes/igv2/images/avatar2.svg'
+                      width={50}
+                      height={50}
+                      alt='img'
+                      className='rounded-full'
+                    />
+                  </Link>
+                  <div className={style.like}>
+                    <Image
+                      src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                      alt='img'
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                </div>
+                <div className={style.review_text}>
+                  <span className={style.text_content} id='text'>
+                    {description}
+                  </span>
+                  <ul className={style.props_cons}>
+                    <li className={style.pros}>Premium PvE / Campaigns</li>
+                    <li className={style.pros}>
+                      Living comminity / mods / ranked
+                    </li>
+                    <li className={style.pros}>Constantly updated</li>
+                    <li className={style.cons}>
+                      even in unranked PvP is very sweaty
+                    </li>
+                    <li className={style.cons}>
+                      why are you still reading ? play already xD
+                    </li>
+                  </ul>
+                  <div className={style.user}>
+                    <span className='flex flex-col' style={{ display: "none" }}>
+                      <span className='text-[14px]'>27th February 2024</span>
+                    </span>
+                    <div className={style.usefull}>
+                      <div className={style.ask}>Useful?</div>
+                      <div className={style.votes}>
+                        <Link
+                          href='#'
+                          title='Useful? YES'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_like_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-like.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                          <span className={style.positive}>0</span>
+                        </Link>
+                        <Link
+                          href='#'
+                          title='Useful? NO'
+                          className={style.vote_link}
+                        >
+                          <div className={style.icon_dislike_btn}>
+                            <Image
+                              src='https://www.instant-gaming.com/themes/igv2/images/icons/icon-dislike.svg'
+                              alt='img'
+                              width={15}
+                              height={15}
+                            />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Link href='#' className={style.read_more}>
+                    Read more
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
