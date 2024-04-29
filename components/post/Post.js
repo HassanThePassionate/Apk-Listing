@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 // import { data } from "@/constant/data";
 import style from "./post.module.css";
 import Image from "next/image";
@@ -7,6 +8,10 @@ import Slider from "./slider/Slider";
 import Arrowbtn from "./arrowBtn/Arrowbtn";
 
 const Post = () => {
+  const [fulldes, setFullDes] = useState(false);
+  const handle = () => {
+    setFullDes(!fulldes);
+  };
   let des =
     "  Even after more than 20 years the game is still THE rts-gem. The DLCs are very nice too. Costly over the years, but I will still buy every single one. It´s no problem if keeping up with the very competetive PvP is too stressfull for you, PvE is always thriving, the singleplayer campaigns are gold and can in part even be played with your buddies - those without the official means to do so have respective mods available. I have spent several hundered hours in this game, in PvE, PvP, campaign and Coop, and there are still tons of content i havent seen yet.";
   let description = des.substring(0, 250) + "...";
@@ -305,7 +310,7 @@ const Post = () => {
                 </div>
                 <div className={style.review_text}>
                   <span className={style.text_content} id='text'>
-                    {description}
+                    {fulldes ? des : description}
                   </span>
                   <ul className={style.props_cons}>
                     <li className={style.pros}>Premium PvE / Campaigns</li>
@@ -360,9 +365,9 @@ const Post = () => {
                     </div>
                   </div>
 
-                  <Link href='#' className={style.read_more}>
+                  <button className={style.read_more} onClick={handle}>
                     Read more
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className={style.review_card}>
@@ -390,7 +395,7 @@ const Post = () => {
                 </div>
                 <div className={style.review_text}>
                   <span className={style.text_content} id='text'>
-                    {description}
+                    {fulldes ? des : description}
                   </span>
                   <ul className={style.props_cons}>
                     <li className={style.pros}>Premium PvE / Campaigns</li>
@@ -445,9 +450,9 @@ const Post = () => {
                     </div>
                   </div>
 
-                  <Link href='#' className={style.read_more}>
+                  <button className={style.read_more} onClick={handle}>
                     Read more
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className={style.review_card}>
@@ -475,7 +480,7 @@ const Post = () => {
                 </div>
                 <div className={style.review_text}>
                   <span className={style.text_content} id='text'>
-                    {description}
+                    {fulldes ? des : description}
                   </span>
                   <ul className={style.props_cons}>
                     <li className={style.pros}>Premium PvE / Campaigns</li>
@@ -530,9 +535,9 @@ const Post = () => {
                     </div>
                   </div>
 
-                  <Link href='#' className={style.read_more}>
+                  <button className={style.read_more} onClick={handle}>
                     Read more
-                  </Link>
+                  </button>
                 </div>
               </div>
               <div className={style.review_card}>
@@ -560,7 +565,7 @@ const Post = () => {
                 </div>
                 <div className={style.review_text}>
                   <span className={style.text_content} id='text'>
-                    {description}
+                    {fulldes ? des : description}
                   </span>
                   <ul className={style.props_cons}>
                     <li className={style.pros}>Premium PvE / Campaigns</li>
@@ -615,9 +620,9 @@ const Post = () => {
                     </div>
                   </div>
 
-                  <Link href='#' className={style.read_more}>
+                  <button className={style.read_more} onClick={handle}>
                     Read more
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
