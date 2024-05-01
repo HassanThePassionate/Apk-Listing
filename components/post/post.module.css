@@ -417,6 +417,7 @@
   z-index: 1;
   font-size: 14px;
   font-weight: 600;
+  color: var(--primary-color);
 }
 .read_more:hover {
   color: #008861;
@@ -439,10 +440,21 @@
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .usefull {
+    display: none;
+  }
+}
 @media screen and (max-width: 660px) {
   .card {
     flex-direction: column;
     align-items: start;
+  }
+  .review_cards {
+    flex-direction: column;
+  }
+  .review_card {
+    width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
@@ -463,11 +475,11 @@
   }
   .paras {
     font-size: 14px;
-    width: 260px;
+    width: 100%;
   }
   .para {
     font-size: 14px;
-    width: 230px;
+    width: 100%;
   }
   .rating {
     display: none;

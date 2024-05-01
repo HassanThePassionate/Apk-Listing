@@ -17,34 +17,34 @@ const Slider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const goNexts = () => swiperInstance && swiperInstance.slideNext();
   const goPrevs = () => swiperInstance && swiperInstance.slidePrev();
-  // const [slidesPerView, setSlidesPerView] = useState(3);
+  const [slidesPerView, setSlidesPerView] = useState(3);
   const [isClient, setIsClient] = useState(true);
 
-  // useEffect(() => {
-  //   setIsClient(true);
-  // }, []);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth <= 900) {
-  //       setSlidesPerView(1);
-  //     } else {
-  //       setSlidesPerView(2);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 900) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
 
-  //   handleResize(); // Set initial slidesPerView based on window width
-  //   window.addEventListener("resize", handleResize); // Add event listener for window resize
+    handleResize(); // Set initial slidesPerView based on window width
+    window.addEventListener("resize", handleResize); // Add event listener for window resize
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+    };
+  }, []);
 
   return (
     <div className={style.wrapper}>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         modules={[Navigation]}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
