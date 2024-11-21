@@ -1,0 +1,66 @@
+.logo {
+  background: var(--logo);
+  aspect-ratio: 6 / 1;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 200px;
+  width: 200px;
+  align-items: flex-end;
+  display: flex;
+  gap: 12px;
+  z-index: 102;
+  margin-top: 5px;
+}
+.logo img {
+  color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  width: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    min-width: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    background: url(https://www.anygame.net/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Flogo-mobile.34e1b81a.png&w=256&q=75);
+    aspect-ratio: 6 / 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 200px;
+    width: 200px;
+    align-items: flex-end;
+    display: flex;
+    gap: 12px;
+    z-index: 102;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    background: url(https://www.anygame.net/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Flogo-mobile.34e1b81a.png&w=256&q=75);
+    aspect-ratio: 4 / 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 120px;
+    width: 120px;
+    align-items: flex-end;
+    display: flex;
+    gap: 12px;
+    z-index: 102;
+    margin-top: 5px;
+  }
+}
+.footer_logo {
+  background: var(--logo);
+  aspect-ratio: 6 / 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 200px;
+  width: 75px;
+  height: 24px;
+  flex: 0 0 75px;
+  margin: 13px 48px 32px 0;
+}

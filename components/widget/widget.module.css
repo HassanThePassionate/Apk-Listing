@@ -1,0 +1,17 @@
+.wrap {
+  padding-top: 24px;
+  border-left: 1px solid var(--border-color);
+  padding-left: 40px;
+}
+.wrap h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+@media (max-width: 1330px) {
+  .wrap {
+    display: none;
+  }
+}
