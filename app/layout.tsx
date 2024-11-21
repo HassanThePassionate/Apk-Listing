@@ -4,9 +4,9 @@ import { Roboto } from "next/font/google";
 import Header from "@/components/header/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Sidebar from "@/components/sidebar/Sidebar";
+import Footer from "@/components/footer/Footer";
 import Widget from "@/components/widget/Widget";
 import { cn } from "@/lib/utils";
-import Footer from "@/components/footer/Footer";
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
